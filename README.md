@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 Emilio Pereira - Portfolio Personal
 
-## Getting Started
+Este es mi portafolio web creado con Next.js, React y Tailwind CSS.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Tecnologías Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este proyecto está construido con las siguientes tecnologías:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    # Next.js - Framework de React para aplicaciones web modernas.
+    # React - Biblioteca para interfaces de usuario.
+    # Tailwind CSS - Framework de estilos basado en clases CSS.
+    # ESLint - Herramienta para asegurar buenas prácticas en el código.
+    # Prettier - Formateador de código automático.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+📦 Instalación y Configuración
 
-To learn more about Next.js, take a look at the following resources:
+Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1️⃣ Clonar el Repositorio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abre una terminal y ejecuta:
 
-## Deploy on Vercel
+    git clone https://github.com/Emiii12/mi-portfolio.git
+    cd mi-portfolio
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2️⃣ Instalar Dependencias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto puede ejecutarse con npm, pnpm o yarn. Usa el gestor de paquetes de tu preferencia:
+
+📌 Usando NPM:
+
+    npm install
+
+📌 Usando PNPM
+
+    pnpm install
+
+📌 Usando Yarn
+
+    yarn install
+
+3️⃣ Ejecutar el Servidor de Desarrollo
+
+Una vez instaladas las dependencias, inicia el servidor con el siguiente comando:
+
+▶ Con NPM
+
+    npm run dev
+
+▶ Con PNPM
+
+    pnpm dev
+
+▶ Con Yarn
+
+    yarn dev
+
+Esto ejecutará el proyecto en modo desarrollo. Abre tu navegador en http://localhost:3000 para verlo.
+
+
+Eso sería todo!
+
+
+📜 Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente.
