@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useSidebar } from '@/context/useSidebar';
 import Sidebar from './NavComponents/Sidebar';
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
 			<div className='fixed w-full h-[70px] bg-coalBlue z-[1000]'>
-				<header className='relative max-w-5xl h-full flex justify-center lg:justify-between items-center mx-auto px-6'>
+				<header className='relative max-w-5xl h-full flex justify-center lg:justify-between items-center mx-auto px-10'>
 					<button 
             className='flex left-6 p-[6px] absolute cursor-pointer rounded-full hover:bg-gray-700 hover:bg-opacity-20 transition-colors duration-150 lg:hidden' 
             onClick={toggleSidebar}

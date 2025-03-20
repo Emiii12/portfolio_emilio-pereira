@@ -14,7 +14,7 @@ export const NavbarItems = () => {
 
   return (
     <nav>
-      <ul className="flex space-x-7 xl:space-x-9 2xl:space-x-11">
+      <ul className="flex space-x-7 xl:space-x-9">
         {navItems.map((item) => (
           <li key={item.id} className="relative cursor-pointer group">
             <a
