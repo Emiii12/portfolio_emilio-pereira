@@ -3,6 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/layout/Navbar/Navbar";
 import { Providers } from "@/util/Providers";
+import PageWrapper from "@/components/PageWrapper/PageWrapper"; 
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -22,12 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${firaCode.variable} antialiased`}
-      >
-        <Providers >
+      <body className={`${firaCode.variable} antialiased`}>
+        <Providers>
           <Navbar />
-          {children}
+          <PageWrapper>
+            {children}
+          </PageWrapper>
         </Providers>
       </body>
     </html>
