@@ -6,8 +6,8 @@ interface PageWrapperProps {
 
 const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
-    <div className="w-full px-6">
-      <main className="w-full flex justify-center">
+    <div className="w-full ">
+      <main className="max-w-6xl mx-auto flex justify-center px-6 lg:px-10">
         {children}
       </main>
     </div>

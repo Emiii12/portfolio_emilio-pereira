@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export const FlagArIcon = ({ className = "w-[576px] h-[353px]" }) => {
   return (
 		<svg className={className} viewBox="0 0 576 353" xmlns="http://www.w3.org/2000/svg">
