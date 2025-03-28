@@ -21,7 +21,7 @@ export const ButtonVariant: React.FC<ButtonVariantProps> = ({
   
   const variants = {
     primary: "bg-vibrantOrange text-charcoalBlue hover:scale-105",
-    secondary: "bg-charcoalBlue border-2 border-vibrantOrange text-vibrantOrange hover:bg-vibrantOrange hover:text-charcoalBlue hover:shadow-md hover:scale-105"
+    secondary: "bg-charcoalBlue hover:bg-vibrantOrange border-2 hover:border-0 border-vibrantOrange text-vibrantOrange hover:text-charcoalBlue hover:shadow-md hover:scale-105"
   };
 
   const buttonClasses = `${baseStyles} ${variants[variant]} ${className}`;
