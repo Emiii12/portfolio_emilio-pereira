@@ -2,13 +2,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { useSidebar } from "@/context/useSidebar";
+import { useSidebarContext } from "@/context/SidebarContext";
 import { CommonTexts } from "@/ui/CommonTexts";
 import { SelectLanguageSideBar } from "./SelectLaguage";
 import { SidebarItems } from "./NavItems";
 
 const Sidebar = () => {
-  const { isSideBarActive, toggleSidebar } = useSidebar();
+  const { isSideBarActive, toggleSidebar } = useSidebarContext();
 
   return (
     <motion.div
