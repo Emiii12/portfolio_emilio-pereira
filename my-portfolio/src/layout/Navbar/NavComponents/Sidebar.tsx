@@ -18,9 +18,7 @@ const Sidebar = () => {
       className="fixed top-0 left-0 h-full w-full lg:hidden bg-coalBlue shadow-md z-[1010] p-7 space-y-7 smx:w-1/2 md:w-[40%]"
     >
       <div className="flex justify-between items-center">
-        <div className="flex">
-          <CommonTexts className="text-[18px] xs:text-xl sm:text-2xl "/>
-        </div>
+        <CommonTexts className="text-[18px] xs:text-xl sm:text-2xl "/>
         <button
           className="p-2 rounded-full hover:bg-gray-700 hover:bg-opacity-20 transition-colors duration-150 cursor-pointer"
           onClick={toggleSidebar}
