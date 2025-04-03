@@ -20,7 +20,7 @@ export const SidebarProvider = ({ children }: { children: React.ReactNode }) => 
   );
 };
 
-export const useSidebar = () => {
+export const useSidebarContext = () => {
   const context = useContext(SidebarContext);
   if (!context) {
     throw new Error("useSidebar debe estar dentro de un SidebarProvider");
