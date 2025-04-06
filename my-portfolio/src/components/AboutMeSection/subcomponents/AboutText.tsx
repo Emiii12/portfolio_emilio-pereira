@@ -8,7 +8,7 @@ const AboutText = () => {
 
 	return (
 		<>
-			<div className='space-y-5 text-whiteOff text-xs smx:text-sm lg:text-base'>
+			<div className='space-y-5 text-whiteOff text-sm lg:text-base'>
 				<p>
 					Desarrollador front-end especializado en React con casi 3 años de experiencia. Me enfoco en crear interfaces 
 					intuitivas y perfectamente adaptables, donde la funcionalidad y la estética coexisten para ofrecer la mejor 

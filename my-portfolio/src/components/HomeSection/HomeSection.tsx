@@ -14,7 +14,7 @@ const HomeSection = () => {
             <Description />
             <ButtonsGroup />
           </div>
-          <div className='order-first lg:order-last lg:w-1/2 flex justify-center items-center'>
+          <div className='order-first lg:order-last lg:w-1/2 flex justify-end items-center'>
             <ProfileImage />
           </div>
         </div>

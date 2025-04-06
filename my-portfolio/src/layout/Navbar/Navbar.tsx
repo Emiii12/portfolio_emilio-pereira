@@ -3,7 +3,7 @@ import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useSidebarContext } from '@/context/SidebarContext';
 import Sidebar from './NavComponents/Sidebar';
-import { CommonTexts } from '../../ui/CommonTexts';
+import { NamePage } from '../../ui/CommonTexts';
 import { NavbarItems } from './NavComponents/NavItems';
 import { SelectLanguage } from './NavComponents/SelectLaguage';
 
@@ -20,7 +20,7 @@ const Navbar = () => {
           >
 						<Bars3Icon className='text-lightSeaGreen w-6 h-6 sm:w-7 sm:h-7 text-start' />
 					</button>
-					<CommonTexts className='text-lg' />
+					<NamePage className='text-lg' />
 					<div className='max-lg:hidden'>
             <NavbarItems />
           </div>

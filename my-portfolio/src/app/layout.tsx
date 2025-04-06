@@ -3,7 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/layout/Navbar/Navbar";
 import { Providers } from "@/util/Providers";
-import PageWrapper from "@/components/PageWrapper/PageWrapper"; 
+import PageWrapper from "@/layout/PageWrapper/PageWrapper"; 
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
