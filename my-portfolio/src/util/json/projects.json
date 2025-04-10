@@ -1,0 +1,37 @@
+[
+  {
+    "title": "SPA Clostech",
+    "stack": ["React", "Next.js", "Tailwind CSS"],
+    "description": "Plataforma digital para la presentación oficial de Clostech y su API, mostrando características y beneficios del producto a potenciales clientes.",
+    "link": "https://www.clostech.tech/",
+    "imageKey": "spa1"
+  },
+  {
+    "title": "Clostech APP",
+    "stack": ["React", "Next.js", "Tailwind CSS"],
+    "description": "Clostech App que permitía crear y probar outfits virtuales con una sola foto. Los usuarios podían subir sus prendas y visualizarlas en su cuerpo. Actualmente no disponible.",
+    "link": "",
+    "imageKey": "spa2"
+  },
+  {
+    "title": "Social Tracker",
+    "stack": ["Next.js", "TypeScript", "GraphQL"],
+    "description": "Dashboard para rastrear interacciones sociales y actividad en múltiples redes sociales.",
+    "link": "https://www.youtube.com/",
+    "imageKey": "social1"
+  },
+  {
+    "title": "Marketing Studio",
+    "stack": ["React", "Chakra UI", "Node.js"],
+    "description": "Aplicación web para gestionar campañas de marketing digital con reportes automatizados.",
+    "link": "https://www.instagram.com/",
+    "imageKey": "marketing1"
+  },
+  {
+    "title": "Crypto Trends",
+    "stack": ["Vue.js", "Tailwind CSS", "Firebase"],
+    "description": "Web para mostrar tendencias de criptomonedas en tiempo real usando datos en vivo.",
+    "link": "https://www.twitter.com/",
+    "imageKey": "crypto1"
+  }
+]

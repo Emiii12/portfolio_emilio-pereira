@@ -15,7 +15,7 @@ const Sidebar = () => {
       initial={{ x: "-100%" }}
       animate={{ x: isSideBarActive ? 0 : "-100%" }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="fixed top-0 left-0 h-full w-full lg:hidden bg-coalBlue shadow-md z-[1010] p-7 space-y-7 smx:w-1/2 md:w-[40%]"
+      className="fixed top-0 left-0 h-full w-full lg:hidden bg-coalBlue shadow-md z-[600] p-7 space-y-7 smx:w-1/2 md:w-[40%]"
     >
       <div className="flex justify-between items-center">
         <NamePage className="text-[18px] xs:text-xl sm:text-2xl "/>

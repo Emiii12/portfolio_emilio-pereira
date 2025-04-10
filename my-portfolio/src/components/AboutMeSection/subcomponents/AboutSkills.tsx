@@ -18,6 +18,8 @@ import gitIcon from '../../../../public/icon/tools/gitIcon.svg';
 import gitHubIcon from '../../../../public/icon/tools/gitHubIcon.svg';
 import npmIcon from '../../../../public/icon/tools/npmIcon.svg';
 import vsCodeIcon from '../../../../public/icon/tools/vsCodeIcon.svg';
+import jiraIcon from '../../../../public/icon/tools/jiraIcon.svg';
+import bitbucketIcon from '../../../../public/icon/tools/bitbucketIcon.svg';
 
 import astroIcon from '../../../../public/icon/learning/astroIcon.svg';
 import expressIcon from '../../../../public/icon/learning/expressIcon.svg';
@@ -39,9 +41,9 @@ const cards = [
   },
   {
     title: 'Herramientas',
-    icons: [gitIcon, gitHubIcon, npmIcon, vsCodeIcon],
-    alt: ['Git', 'GitHub', 'NPM', 'VS Code'],
-    levels: ['Intermedio', 'Intermedio', 'Avanzado', 'Avanzado']
+    icons: [gitIcon, gitHubIcon, npmIcon, vsCodeIcon, jiraIcon, bitbucketIcon],
+    alt: ['Git', 'GitHub', 'NPM', 'VS Code', 'Jira', 'Bitbucket'],
+    levels: ['Intermedio', 'Intermedio', 'Avanzado', 'Avanzado', 'Intermedio', 'Intermedio']
   },
   {
     title: 'Aprendiendo',
@@ -75,7 +77,7 @@ const AboutSkills = () => {
             return (
               <div
                 key={cardIndex} 
-                className='flex-1 relative flex flex-col items-center bg-coalBlue text-white text-lg font-semibold rounded-3xl shadow-2xl shadow-black p-5 py-6'
+                className='flex-1 relative flex flex-col items-center bg-coalBlue text-white text-lg font-semibold rounded-3xl shadow-lg shadow-black p-5 py-6'
               >
                 <h2 className='mb-6 text-xl text-white font-semibold'>{card.title}</h2>
                 <div className='w-full grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 place-items-center'>
@@ -104,7 +106,7 @@ const AboutSkills = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: 10 }}
                               transition={{ duration: 0.1 }}
-                              className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-36 smx:w-44 bg-charcoalBlue text-white text-center p-2 smx:p-2 rounded-lg shadow-2xl z-50 
+                              className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-36 smx:w-44 bg-charcoalBlue text-white text-center p-2 smx:p-2 rounded-lg shadow-2xl shadow-black z-50 
                               before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-charcoalBlue"
                             >
                               <p className='font-bold text-lightSeaGreen text-base'>{card.alt[idx]}</p>

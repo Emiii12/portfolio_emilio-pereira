@@ -1,5 +1,6 @@
 'use client'
 import { useAppContext } from '@/context/AppContext';
+import { ReadMore } from '@/ui/ReadMore';
 import { motion, AnimatePresence } from 'framer-motion';
 import React from 'react'
 
@@ -35,14 +36,9 @@ const AboutText = () => {
 					)}
 				</AnimatePresence>
 			</div>
-			<p className='text-start text-xs sm:text-sm'>
+			<p className='text-start text-xs sm:text-sm text-white'>
 				{showMore ? '¿Ya no te intereso?' : 'Si te intereso:'}{' '}
-				<button 
-					className='relative cursor-pointer text-aquaCyan hover:text-lightSeaGreen transition-colors duration-100'
-					onClick={toggleShowMore}
-				>
-					{showMore ? 'Leer menos...' : 'Leer más...'}
-				</button>
+				<ReadMore text={showMore ? 'Leer menos...' : 'Leer más...'} onClick={toggleShowMore} className='font-semibold'/>
         </p>
 		</>
 	);
