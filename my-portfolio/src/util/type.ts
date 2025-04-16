@@ -4,4 +4,8 @@ export interface Project {
 	stack: string[];
 	imageKey: string;
 	link?: string;
-}
+	role: string;
+	details: string;
+	responsibilities: string[];
+	state: string | null;
+};

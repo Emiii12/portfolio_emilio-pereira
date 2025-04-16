@@ -1,6 +1,6 @@
-import projects from '@/util/json/projects.json';
-import { Project } from '@/util/type';
+import projectsJson from '@/util/json/projects.json';
+import type { Project } from '@/util/type';
 
 export const getProjects = (): Project[] => {
-  return projects;
+  return projectsJson as Project[];
 };

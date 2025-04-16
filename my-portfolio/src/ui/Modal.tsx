@@ -1,5 +1,7 @@
 import React from 'react';
-import { ArrowLongLeftIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { motion, AnimatePresence } from 'framer-motion';
+import ButtonX from './ButtonX';
 
 interface ModalProps {
   onClose: () => void;
@@ -8,19 +10,21 @@ interface ModalProps {
 
 export const Modal = ({ onClose, children }: ModalProps) => {
   return (
-    <div className='w-full max-w-[820px] p-4 bg-coalBlue rounded-2xl shadow-2xl pointer-events-auto'>
-      <div className='mb-4'>
-        <button
-          onClick={onClose}
-          className='flex justify-center items-center gap-2 text-aquaCyan hover:text-lightSeaGreen transition-colors duration-150 cursor-pointer'
-        >
-          <ArrowLongLeftIcon className='size-4' />
-          <span className='text-xs'>Regresar</span>
-        </button>
-      </div>
-      <div className='text-white'>
-        {children}
-      </div>
-    </div>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.7 }}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
+        className='w-full max-w-[820px] max-h-[calc(100vh-2rem)] p-4 bg-coalBlue rounded-2xl shadow-2xl pointer-events-auto flex flex-col'
+      >
+        <div className='relative w-full'>
+          <ButtonX onClick={onClose} className='absolute top-0 right-0' />
+          <div className='overflow-y-auto'>
+            {children}
+          </div>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   );
 };

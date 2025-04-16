@@ -7,6 +7,4 @@ export const imageMap: Record<string, StaticImageData> = {
   spa1,
   spa2,
   social1: spa1,
-  marketing1: spa1,
-  crypto1: spa1,
 };

@@ -6,6 +6,7 @@ import { useSidebarContext } from "@/context/SidebarContext";
 import { NamePage } from "@/ui/CommonTexts";
 import { SelectLanguageSideBar } from "./SelectLaguage";
 import { SidebarItems } from "./NavItems";
+import ButtonX from "@/ui/ButtonX";
 
 const Sidebar = () => {
   const { isSideBarActive, toggleSidebar } = useSidebarContext();
@@ -19,12 +20,7 @@ const Sidebar = () => {
     >
       <div className="flex justify-between items-center">
         <NamePage className="text-[18px] xs:text-xl sm:text-2xl "/>
-        <button
-          className="p-2 rounded-full hover:bg-gray-700 hover:bg-opacity-20 transition-colors duration-150 cursor-pointer"
-          onClick={toggleSidebar}
-        >
-          <XMarkIcon className="text-lightSeaGreen w-5 h-5 sm:w-6 sm:h-6" />
-        </button>
+        <ButtonX onClick={toggleSidebar} />
       </div>
       <SidebarItems />
       <div>

@@ -7,7 +7,7 @@ import { TitleSection } from '@/ui/CommonTexts';
 const AboutMe = () => {
 
   return (
-    <section className='flex flex-col gap-10 max-w-[820px] lg:max-w-full mx-auto'>
+    <section className='flex flex-col gap-10 max-w-[820px] lg:max-w-full mx-auto' id='aboutMeSection'>
       <TitleSection text='sobre mí' />
 			<div className='bg-coalBlue p-4 md:p-8 rounded-3xl shadow-lg shadow-black space-y-6'>
         <AboutText />

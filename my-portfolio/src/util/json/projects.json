@@ -1,37 +1,54 @@
 [
   {
     "title": "SPA Clostech",
-    "stack": ["React", "Next.js", "Tailwind CSS"],
-    "description": "Plataforma digital para la presentación oficial de Clostech y su API, mostrando características y beneficios del producto a potenciales clientes.",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Plataforma digital oficial de Clostech, diseñada para presentar su identidad visual y detallar las capacidades de su API enfocada en moda digital.",
     "link": "https://www.clostech.tech/",
-    "imageKey": "spa1"
+    "imageKey": "spa1",
+    "role": "Desarrollador Web Frontend",
+    "details": "SPA Clostech fue desarrollada como la plataforma oficial de presentación para la marca, exponiendo su identidad visual y los detalles técnicos de su API de moda digital. El sitio se convirtió en el punto de contacto principal para clientes potenciales interesados en implementar soluciones de IA en el sector de la moda.\n\nEl proyecto se construyó utilizando React como base principal, aprovechando Next.js para optimizar el rendimiento y las capacidades de SEO. La implementación de Tailwind CSS permitió crear una interfaz visualmente coherente y completamente adaptable a diferentes dispositivos, manteniendo la estética minimalista característica de la marca.\n\nEl proyecto experimentó modificaciones a lo largo del tiempo en las que no tuve intervención directa debido a mis responsabilidades en otros sitios web para Clostech.",
+    "responsibilities": [
+      "Diseño e implementación de la interfaz",
+      "Desarrollo responsivo de la web",
+      "Optimización para dispositivos móviles",
+      "Colaboración en diseño"
+    ],
+    "state": "público"
   },
   {
     "title": "Clostech APP",
-    "stack": ["React", "Next.js", "Tailwind CSS"],
-    "description": "Clostech App que permitía crear y probar outfits virtuales con una sola foto. Los usuarios podían subir sus prendas y visualizarlas en su cuerpo. Actualmente no disponible.",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Tanstack Query", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Aplicación web para crear y visualizar outfits virtuales en tiempo real usando inteligencia artificial y una sola fotografía.",
     "link": "",
-    "imageKey": "spa2"
+    "imageKey": "spa2",
+    "role": "Desarrollador Web Frontend",
+    "details": "Clostech APP representó una innovación significativa en el sector de la moda digital, combinando tecnología de inteligencia artificial con una interfaz intuitiva que permitía a los usuarios visualizar outfits completos utilizando solo una fotografía. La plataforma implementaba algoritmos avanzados de reconocimiento corporal para posicionar virtualmente las prendas seleccionadas.\n\nTécnicamente, la aplicación se desarrolló con una arquitectura moderna basada en React y Next.js, con un enfoque en la optimización del rendimiento para procesar y manipular imágenes en tiempo real. La integración con APIs de IA requirió el desarrollo de protocolos de comunicacióneficientes y un sistema robusto de gestión de estados para manejar los diferentes procesos de transformación visual.\n\nAunque la aplicación ya no está disponible públicamente, este proyecto sentó las bases tecnológicas para futuras iteraciones de productos Clostech, estableciendo estándares tanto para la integración de IA como para el diseño de interfaces centradas en experiencias visuales inmersivas en el sector de la moda digital.",
+    "responsibilities": [
+      "Desarrollo responsivo de la web",
+      "Implementación del sistema de carga de prendas",
+      "Conexión con modelo de IA para visualización",
+      "Desarrollo de la subida, carga y puesta de las imágenes",
+      "Optimización de la web para dispositivos móviles"
+    ],
+    "state": "deshabilitado"
   },
   {
-    "title": "Social Tracker",
-    "stack": ["Next.js", "TypeScript", "GraphQL"],
-    "description": "Dashboard para rastrear interacciones sociales y actividad en múltiples redes sociales.",
-    "link": "https://www.youtube.com/",
-    "imageKey": "social1"
-  },
-  {
-    "title": "Marketing Studio",
-    "stack": ["React", "Chakra UI", "Node.js"],
-    "description": "Aplicación web para gestionar campañas de marketing digital con reportes automatizados.",
-    "link": "https://www.instagram.com/",
-    "imageKey": "marketing1"
-  },
-  {
-    "title": "Crypto Trends",
-    "stack": ["Vue.js", "Tailwind CSS", "Firebase"],
-    "description": "Web para mostrar tendencias de criptomonedas en tiempo real usando datos en vivo.",
-    "link": "https://www.twitter.com/",
-    "imageKey": "crypto1"
+    "title": "Portal Clostech",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Tanstack Query", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Portal Empresarial Clostech para gestionar el uso de la API y facilitar la integración con WordPress, Shopify y Tiendanube de forma centralizada.",
+    "link": "https://portal-empresa.clostech.tech/authentication",
+    "imageKey": "social1",
+    "role": "Desarrollador Web Frontend",
+    "details": "El Portal Clostech fue concebido como una plataforma administrativa integral que permite a empresas y desarrolladores gestionar eficientemente su uso de la API de Clostech. El sistema centraliza todas las herramientas necesarias para implementación, monitoreo y personalización en un único dashboard interactivo, facilitando la adopción tecnológica para clientes de diversos sectores.\n\nLa arquitectura del portal se implementó con React y Next.js, priorizando la seguridad en el manejo de credenciales y datos sensibles. El sistema incorporó integraciones avanzadas con plataformas de e-commerce como Tiendanube, Shopify y WordPress, desarrollando conectores específicos que permitían una implementación nativa de los componentes de IA en diferentes entornos de venta online.\n\nUna característica distintiva del portal fue su sistema de visualización de estadísticas en tiempo real, que proporcionaba a los usuarios insights valiosos sobre el rendimiento de sus implementaciones. Esta funcionalidad requirió el desarrollo de componentes de visualización de datos altamente optimizados y la implementación de sistemas de actualización dinámica para mantener la información siempre actualizada.",
+    "responsibilities": [
+      "Creación y desarrollo de la web desde cero",
+      "Implementación del registro y login",
+      "Diseño del dashboard con estadísticas",
+      "Integración del back-end",
+      "Conexión con Tiendanube para la implementación de componentes propios",
+      "Vista del perfil del cliente y de los planes",
+      "Desarrollo responsivo de la web"
+    ],
+    "state": "privado"
   }
 ]
