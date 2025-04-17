@@ -3,7 +3,7 @@ import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { useSidebarContext } from '@/context/SidebarContext';
 import Sidebar from './NavComponents/Sidebar';
-import { NamePage } from '../../ui/CommonTexts';
+import { NamePage } from '@/ui/common/CommonTexts';
 import { NavbarItems } from './NavComponents/NavItems';
 import { SelectLanguage } from './NavComponents/SelectLaguage';
 

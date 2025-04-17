@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import React, { useState } from 'react';
-import { CustomSelect } from '@/ui/Input';
+import { CustomSelect } from '@/ui/input/CustomSelect';
 
 export const SelectLanguage = () => {
   const [language, setLanguage] = useState('es');
@@ -42,4 +42,4 @@ export const SelectLanguageSideBar = () => {
       selectClass='text-base sm:text-xl xs:text-lg px-0 py-1 '
     />
   );
-}
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonVariant } from '@/ui/ButtonVariant';
+import { ButtonVariant } from '@/ui/button/ButtonVariant';
 
 const ButtonsGroup = () => {
   return (

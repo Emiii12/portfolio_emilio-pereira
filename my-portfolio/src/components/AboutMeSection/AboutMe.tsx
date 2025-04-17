@@ -2,7 +2,7 @@
 import React from 'react';
 import AboutText from './subcomponents/AboutText';
 import AboutSkills from './subcomponents/AboutSkills';
-import { TitleSection } from '@/ui/CommonTexts';
+import { TitleSection } from '@/ui/common/CommonTexts';
 
 const AboutMe = () => {
 

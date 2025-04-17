@@ -2,7 +2,10 @@ export interface Project {
 	title: string;
 	description: string;
 	stack: string[];
-	imageKey: string;
+	images: {
+	  label: string;
+	  keys: string[];
+	}[];
 	link?: string;
 	role: string;
 	details: string;

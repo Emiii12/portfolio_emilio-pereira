@@ -10,7 +10,7 @@ interface ButtonXProps {
 const ButtonX: React.FC<ButtonXProps> = ({ onClick, className = '' }) => {
   return (
     <button
-      className={`p-1 border border-lightSeaGreen rounded-full hover:bg-charcoalBlue transition-colors duration-150 cursor-pointer ${className}`}
+      className={`p-1 border border-lightSeaGreen rounded-full bg-coalBlue hover:bg-charcoalBlue transition-colors duration-150 cursor-pointer ${className}`}
       onClick={onClick}
     >
       <XMarkIcon className="text-lightSeaGreen size-4 sm:size-5" />

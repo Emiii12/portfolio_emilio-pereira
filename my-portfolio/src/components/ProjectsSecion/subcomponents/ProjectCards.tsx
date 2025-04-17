@@ -8,7 +8,8 @@ import { CardText } from './CardText';
 import { imageMap } from './ImageMap';
 import { useAppContext } from '@/context/AppContext';
 import ModalProject from './ModalProject';
-import { ButtonCard } from '@/ui/ButtonCard';
+import { ButtonCard } from '@/ui/button/ButtonCard';
+import TechStack from './TechStack';
 
 const projects = getProjects();
 
@@ -53,22 +54,18 @@ const ProjectCards = () => {
               </div>
               <div className='flex gap-1 flex-wrap'>
                 {project.stack.slice(0, 3).map((tech, i) => (
-                  <span
-                    key={i}
-                    className='bg-charcoalBlue px-2 py-1 text-xs rounded-full transition-transform duration-150 hover:scale-110 cursor-default'
-                  >
-                    {tech}
-                  </span>
+                  <TechStack tech={tech} key={i} className='px-2 py-1 text-xs'/>
                 ))}
               </div>
               <div className='text-whiteOff text-sm'>
                 <CardText text={project.description} />
               </div>
-              <div className='w-full'>
+              <div className='rounded-2xl border-2 border-charcoalBlue hover:scale-[102%] transition-transform duration-200 shadow-lg shadow-charcoalBlue'>
                 <Image
-                  src={imageMap[project.imageKey]}
+                  src={imageMap[project.images[0]?.keys[0]]}
                   alt='Imagen proyecto'
-                  className='w-full object-contain rounded-2xl hover:scale-[102%] transition-transform duration-200'
+                  className='w-full h-full object-contain rounded-2xl'
+                  loading='lazy'
                 />
               </div>
               <div className='w-full h-full flex justify-center items-center p-1'>

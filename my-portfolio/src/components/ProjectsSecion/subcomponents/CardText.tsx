@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { ReadMore } from '@/ui/ReadMore';
+import { ReadMore } from '@/ui/common/ReadMore';
 
 type Props = {
   text: string;

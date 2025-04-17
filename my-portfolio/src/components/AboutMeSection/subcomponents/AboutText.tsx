@@ -1,6 +1,6 @@
 'use client'
 import { useAppContext } from '@/context/AppContext';
-import { ReadMore } from '@/ui/ReadMore';
+import { ReadMore } from '@/ui/common/ReadMore';
 import { motion, AnimatePresence } from 'framer-motion';
 import React from 'react'
 

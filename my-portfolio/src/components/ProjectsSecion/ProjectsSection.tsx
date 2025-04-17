@@ -1,4 +1,4 @@
-import { TitleSection } from '@/ui/CommonTexts';
+import { TitleSection } from '@/ui/common/CommonTexts';
 import React from 'react';
 import ProjectText from './subcomponents/ProjectText';
 import ProjectCards from './subcomponents/ProjectCards';
