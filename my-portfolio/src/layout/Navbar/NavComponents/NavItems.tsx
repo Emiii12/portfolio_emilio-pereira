@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 const navItems = [
-  { id: "home", text: "home", href: "#home" },
-  { id: "about", text: "sobre mí", href: "#about" },
-  { id: "projects", text: "proyectos", href: "#projects" },
-  { id: "references", text: "referencias", href: "#references" },
+  { id: "home", text: "home", href: "#homeSection " },
+  { id: "about", text: "sobre mí", href: "#aboutMeSection" },
+  { id: "projects", text: "proyectos", href: "#projectSection" },
+  { id: "experience", text: "experiencia", href: "#experience" },
   { id: "contact", text: "contacto", href: "#contact" },
 ];
 

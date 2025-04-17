@@ -3,7 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/layout/Navbar/Navbar";
 import { Providers } from "@/util/Providers";
-import PageWrapper from "@/components/PageWrapper/PageWrapper"; 
+import PageWrapper from "@/layout/PageWrapper/PageWrapper"; 
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="!scroll-smooth">
       <body className={`${firaCode.variable} antialiased`}>
         <Providers>
           <Navbar />

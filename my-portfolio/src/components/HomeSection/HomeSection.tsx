@@ -7,14 +7,14 @@ import ProfileImage from './subcomponents/ProfileImage';
 const HomeSection = () => {
   return (
     <>
-      <section className='w-full pt-16 sm:pt-24 lg:pt-32'>
+      <section className='w-full pt-16 sm:pt-24 lg:pt-32' id='homeSection'>
         <div className='flex flex-col lg:flex-row justify-center items-center pt-8 gap-7'>
           <div className='order-last lg:order-first w-full lg:w-1/2 space-y-4 lg:space-y-5'>
             <Title />
             <Description />
             <ButtonsGroup />
           </div>
-          <div className='order-first lg:order-last lg:w-1/2 flex justify-center items-center'>
+          <div className='order-first lg:order-last lg:w-1/2 flex justify-end items-center'>
             <ProfileImage />
           </div>
         </div>

@@ -17,7 +17,7 @@ const Title = () => {
         <span className='text-lightSeaGreen hidden smx:inline px-2'>|</span> 
         <span className='text-white text-center flex items-center justify-center'>
           Buenos Aires, Argentina
-          <Image src={flagArIcon} alt='Bandera de Argentina' className='size-6 sm:size-8 ml-1 mt-1'/>
+          <Image src={flagArIcon} alt='Bandera de Argentina' className='w-6 lg:w-7 ml-1 mt-1'/>
         </span>
       </p>
     </div>
