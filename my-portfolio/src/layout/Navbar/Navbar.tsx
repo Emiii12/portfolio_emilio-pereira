@@ -15,7 +15,7 @@ const Navbar = () => {
 			<div className='fixed w-full h-[60px] bg-coalBlue z-[500] shadow-lg'>
 				<header className='relative max-w-6xl h-full flex justify-center lg:justify-between items-center mx-auto px-6 lg:px-10'>
 					<button 
-            className='flex left-6 p-[6px] absolute cursor-pointer rounded-full hover:bg-gray-700 hover:bg-opacity-20 transition-colors duration-150 lg:hidden' 
+            className='flex left-6 absolute cursor-pointer rounded-full hover:bg-gray-700 hover:bg-opacity-20 transition-colors duration-150 lg:hidden' 
             onClick={toggleSidebar}
           >
 						<Bars3Icon className='text-lightSeaGreen w-6 h-6 sm:w-7 sm:h-7 text-start' />

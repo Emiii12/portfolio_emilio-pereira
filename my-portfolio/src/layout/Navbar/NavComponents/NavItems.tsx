@@ -1,4 +1,6 @@
 "use client";
+import { useAppContext } from "@/context/AppContext";
+import { useSidebarContext } from "@/context/SidebarContext";
 import React, { useState } from "react";
 
 const navItems = [
@@ -44,6 +46,7 @@ export const NavbarItems = () => {
 
 export const SidebarItems = () => {
   const [active, setActive] = useState("home");
+  const { toggleSidebar } = useSidebarContext();
 
   return (
     <nav>
@@ -52,7 +55,10 @@ export const SidebarItems = () => {
           <li key={item.id} className="relative">
             <a
               href={item.href}
-              onClick={() => setActive(item.id)}
+              onClick={() => {
+                setActive(item.id);
+                toggleSidebar();
+              }}
               className="text-white text-base sm:text-xl xs:text-lg inline-block relative pb-1 cursor-pointer"
             >
               <span className="text-lightSeaGreen">#</span>
