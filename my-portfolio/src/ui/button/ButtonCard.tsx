@@ -15,7 +15,7 @@ export const ButtonCard: React.FC<ButtonVariantProps> = ({
   className = '', 
   onClick 
 }) => {
-  const baseStyles = "border-[1px] border-vibrantOrange rounded-2xl cursor-pointer transition-colors duration-150 hover:bg-vibrantOrange hover:text-black font-semibold";
+  const baseStyles = "border-[1px] border-vibrantOrange rounded-2xl cursor-pointer transition-colors duration-150 hover:bg-vibrantOrange text-vibrantOrange hover:text-black font-bold";
   
   const buttonClasses = `${baseStyles} ${className}`;
 

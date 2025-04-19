@@ -19,7 +19,7 @@ const Sidebar = () => {
     >
       <div className="p-4 sm:p-7 flex justify-between items-center border-b border-charcoalBlue/30">
         <NamePage className="text-[18px] xs:text-xl sm:text-2xl" />
-        <ButtonX onClick={toggleSidebar} />
+        <ButtonX onClick={toggleSidebar} borderColor="lightSeaGreen" iconClassName="text-lightSeaGreen" />
       </div>
       
       <div className="overflow-y-auto scrollbar-thin scrollbar-thumb-lightSeaGreen scrollbar-track-transparent">

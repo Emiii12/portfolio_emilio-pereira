@@ -12,3 +12,12 @@ export interface Project {
 	responsibilities: string[];
 	state: string | null;
 };
+
+export interface Experience {
+	company: string;
+	role: string;
+	fechaInicio: string;
+	fechaFin: string;
+	details: string;
+	responsibilities: string[];
+};

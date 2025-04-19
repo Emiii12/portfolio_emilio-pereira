@@ -18,7 +18,7 @@ export const Modal = ({ onClose, children }: ModalProps) => {
         className='w-full max-w-[820px] max-h-[calc(100vh-2rem)] p-4 bg-coalBlue rounded-2xl shadow-2xl pointer-events-auto flex flex-col'
       >
         <div className='relative w-full'>
-          <ButtonX onClick={onClose} className='absolute top-0 right-0 z-[50]' />
+          <ButtonX onClick={onClose} className='absolute top-0 right-0 z-[50]' borderColor='vibrantOrange' iconClassName='text-vibrantOrange' />
           <div className='overflow-y-auto'>
             {children}
           </div>
