@@ -10,7 +10,7 @@ const ButtonsGroup = () => {
       <ButtonVariant variant="secondary" as="link" href="/pdf/emilio-pereira_cv-español.pdf" target="_blank" className='w-full py-2'>
         Ver CV
       </ButtonVariant>
-      <ButtonVariant variant="secondary" as="link" href="#contacto" className="col-span-1 w-full py-2">
+      <ButtonVariant variant="secondary" as="link" href="#contactSection" className="col-span-1 w-full py-2">
         Contáctame
       </ButtonVariant>
     </div>

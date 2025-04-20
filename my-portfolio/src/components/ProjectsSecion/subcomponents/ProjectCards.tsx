@@ -77,7 +77,7 @@ const ProjectCards = () => {
                     </span>
                   </ButtonCard>
                 ) : (
-                  <span className='text-xs text-red-500'>No disponible</span>
+                  <span className='text-sm text-red-500 font-semibold'>No disponible</span>
                 )}
               </div>
             </div>

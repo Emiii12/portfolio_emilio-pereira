@@ -27,9 +27,9 @@ export const ButtonVariant: React.FC<ButtonVariantProps> = ({
     ' flex justify-center items-center rounded-xl cursor-pointer font-bold transition-all duration-150';
 
   const variants = {
-    primary: 'bg-vibrantOrange text-charcoalBlue hover:bg-vibrantOrange/80',
+    primary: 'bg-vibrantOrange/90 text-charcoalBlue hover:bg-vibrantOrange',
     secondary:
-      'bg-charcoalBlue hover:bg-vibrantOrange/90 border-2 border-vibrantOrange text-vibrantOrange hover:text-charcoalBlue hover:shadow-md'
+      'bg-charcoalBlue hover:bg-vibrantOrange border-2 border-vibrantOrange text-vibrantOrange hover:text-charcoalBlue hover:shadow-md'
   };
 
   const disabledClasses = disabled ? 'opacity-50 cursor-not-allowed pointer-events-none' : '';

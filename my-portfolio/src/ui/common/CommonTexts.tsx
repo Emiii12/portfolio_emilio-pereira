@@ -11,7 +11,7 @@ interface TitleSectionProps {
 
 export const NamePage: React.FC<NamePageProps> = ({ className }) => {
   return (
-    <p className={`text-white font-semibold ${className}`}>
+    <p className={`text-white font-semibold cursor-default ${className}`}>
       Emilio<span className='text-lightSeaGreen'>.</span>
     </p>
   );
