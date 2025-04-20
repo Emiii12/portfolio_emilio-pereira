@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 @plugin 'tailwind-scrollbar';
+
 @theme {
   --font-fira-code: "Fira Code", monospace;
   --font-playwrite: "Playwrite DE LA", sans-serif;
@@ -16,7 +17,7 @@
 
   --breakpoint-xs: 320px;
   --breakpoint-smx: 440px;
-};
+}
 
 :root {
   --background: #ffffff;
@@ -24,24 +25,27 @@
 	--font-fira-code: "Fira Code", monospace;
 };
 
-html {
-  scroll-behavior: smooth;
-};
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #14171b;
     --foreground: #ffffff;
 		--font-fira-code: "Fira Code", monospace;
-  };
-};
+  }
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-fira-code);
-};
+}
 
 code, pre {
   font-family: var(--font-fira-code);
-};
+}

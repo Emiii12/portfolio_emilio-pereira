@@ -5,7 +5,7 @@ import ExperienceCard from './subcomponents/ExperienceCard';
 
 const ExperienceSection = () => {
   return (
-    <section className='w-full max-w-[820px] lg:max-w-full mx-auto flex flex-col gap-10 mb-20' id='experienceSection'>
+    <section className='w-full max-w-[820px] lg:max-w-full mx-auto flex flex-col gap-10' id='experienceSection'>
 			<TitleSection text='experiencia' />
 			<ExperienceText />
       <ExperienceCard />
