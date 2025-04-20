@@ -1,14 +1,13 @@
 "use client";
-import { useAppContext } from "@/context/AppContext";
 import { useSidebarContext } from "@/context/SidebarContext";
 import React, { useState } from "react";
 
 const navItems = [
-  { id: "home", text: "home", href: "#homeSection " },
+  { id: "home", text: "home", href: "#homeSection" },
   { id: "about", text: "sobre mí", href: "#aboutMeSection" },
   { id: "projects", text: "proyectos", href: "#projectSection" },
-  { id: "experience", text: "experiencia", href: "#experience" },
-  { id: "contact", text: "contacto", href: "#contact" },
+  { id: "experience", text: "experiencia", href: "#experienceSection" },
+  { id: "contact", text: "contacto", href: "#contactSection" },
 ];
 
 export const NavbarItems = () => {

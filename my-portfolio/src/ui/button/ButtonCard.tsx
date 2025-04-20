@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-interface ButtonVariantProps {
+interface ButtonCardProps {
   as?: 'button' | 'link';
   href?: string;
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface ButtonVariantProps {
   onClick?: () => void;
 }
 
-export const ButtonCard: React.FC<ButtonVariantProps> = ({ 
+export const ButtonCard: React.FC<ButtonCardProps> = ({ 
   as = 'button', 
   href, 
   children, 
