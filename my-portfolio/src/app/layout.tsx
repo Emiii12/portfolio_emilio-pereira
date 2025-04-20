@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/layout/Navbar/Navbar";
 import { Providers } from "@/util/Providers";
 import PageWrapper from "@/layout/PageWrapper/PageWrapper"; 
+import Footer from "@/layout/Footer/Footer";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <PageWrapper>
             {children}
           </PageWrapper>
+          <Footer />
         </Providers>
       </body>
     </html>
