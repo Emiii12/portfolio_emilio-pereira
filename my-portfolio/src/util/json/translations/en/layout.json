@@ -1,0 +1,15 @@
+{
+    "header": {
+        "navItems": ["home", "about me", "projects", "experience", "contact"]
+    },
+    "footer": {
+        "major": "My websites are like me: always looking for the best version.",
+        "navigation": {
+            "items": ["home", "about me", "projects", "experience", "contact"]
+        },
+        "myPortfolio": {
+            "title": "My Portfolio",
+            "subtitle": "Created with:"
+        }
+    }
+}
