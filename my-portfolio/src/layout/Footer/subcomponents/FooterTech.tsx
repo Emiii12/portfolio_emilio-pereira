@@ -17,7 +17,9 @@ const FooterTech = () => {
   return (
     <div className="flex flex-col gap-5 flex-wrap justify-center items-center md:items-start">
       <h3 className="text-xl font-semibold">{t("footer.myPortfolio.title")}</h3>
-      <p className="text-sm text-whiteOff mt-1 cursor-default">{t("footer.myPortfolio.subtitle")}</p>
+      <p className="text-sm text-whiteOff mt-1 cursor-default">
+        {t("footer.myPortfolio.subtitle")}:
+      </p>
       <div className="flex flex-col gap-3 items-center md:items-start">
         {techStack.map((tech) => (
           <span key={tech.name} className="flex gap-2 text-white cursor-default">

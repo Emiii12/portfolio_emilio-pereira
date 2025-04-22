@@ -32,9 +32,9 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   };
 
   return (
-    <div className={`relative ${containerClass}`}>
+    <div className={`relative`}>
       {label && <label className={`block mb-2 ${labelClass}`}>{label}</label>}
-      <div className="relative">
+      <div className={`relative ${containerClass}`}>
         <select
           value={value}
           onChange={(e) => handleChange(e.target.value)}

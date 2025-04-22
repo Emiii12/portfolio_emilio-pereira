@@ -3,7 +3,7 @@ import { useAppContext } from '@/context/AppContext';
 import ContainerText from '@/ui/common/ContainerText';
 import { ReadMore } from '@/ui/button/ReadMore';
 import { motion, AnimatePresence } from 'framer-motion';
-import React from 'react'
+import React, { useState } from 'react'
 
 const AboutText = () => {
 	const { showMore, toggleShowMore } = useAppContext();
@@ -40,7 +40,7 @@ const AboutText = () => {
 				</div>
 				<span className='text-start text-xs sm:text-sm text-white'>
 					{showMore ? '¿Ya no te intereso?' : 'Si te intereso:'}{' '}
-					<ReadMore text={showMore ? 'Leer menos...' : 'Leer más...'} onClick={toggleShowMore} className='font-semibold'/>
+					<ReadMore expanded={showMore} onClick={toggleShowMore} className='font-semibold'/>
 				</span>
 			</ContainerText>
 		</>

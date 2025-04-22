@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { LinkIcon } from '@heroicons/react/24/outline';
 
-import { getProjects } from '@/services/projectsService';
+import { useProjects } from '@/services/projectsService';
 import { CardText } from './CardText';
 import { imageMap } from './ImageMap';
 import { useAppContext } from '@/context/AppContext';
@@ -11,10 +11,13 @@ import ModalProject from './ModalProject';
 import { ButtonCard } from '@/ui/button/ButtonCard';
 import TechStack from './TechStack';
 
-const projects = getProjects();
+import { useTranslation } from "react-i18next";
 
 const ProjectCards = () => {
   const { showModal, toggleShowModal, setSelectedProject, selectedProject } = useAppContext();
+  const { t: tCommon } = useTranslation("common");
+  const { t: tProjects } = useTranslation("projectsSection");
+  const projects = useProjects();
 
   useEffect(() => {
     if (showModal) {
@@ -49,7 +52,9 @@ const ProjectCards = () => {
                   }}
                   className='px-3 smx:px-3 sm:px-2 md:px-3 py-1' 
                 >
-                  <span className='text-xs sm:text-sm text-nowrap'>Detalles</span>
+                  <span className='text-xs sm:text-sm text-nowrap'>
+                    {tCommon("buttonCardProjectsDetails")}
+                  </span>
                 </ButtonCard>
               </div>
               <div className='flex gap-1 flex-wrap'>
@@ -73,11 +78,13 @@ const ProjectCards = () => {
                   <ButtonCard as='link' className='px-3 py-2' href={project.link} >
                     <span className='text-xs sm:text-sm flex items-center justify-center gap-2'>
                       <LinkIcon className='size-4' />
-                      Ver Web
+                      {tCommon("buttonCardProjectsSeeWeb")}
                     </span>
                   </ButtonCard>
                 ) : (
-                  <span className='text-sm text-red-500 font-semibold'>No disponible</span>
+                  <span className='text-sm text-red-500 font-semibold uppercase'>
+                    {tProjects("cardWebLink")}
+                  </span>
                 )}
               </div>
             </div>

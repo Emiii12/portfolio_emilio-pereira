@@ -20,7 +20,7 @@ export const CardText = ({ text }: Props) => {
       {getShortText()}
       {text.length > maxLength && (
         <ReadMore
-          text={expanded ? 'Leer menos' : 'Leer más'}
+          expanded={expanded}
           onClick={() => setExpanded((prev) => !prev)}
         />
       )}

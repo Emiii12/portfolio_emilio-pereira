@@ -1,11 +1,11 @@
 {
     "header": {
-        "navItems": ["inicio", "sobre mí", "proyectos", "experiencia", "contacto"]
+        "navItems": ["inicio", "proyectos", "sobre mí",  "experiencia", "contacto"]
     },
     "footer": {
         "major": "Mis webs son como yo: siempre buscando la mejor versión.",
         "navigation": {
-            "items": ["inicio", "sobre mí", "proyectos", "experiencia", "contacto"]
+            "items": ["inicio", "proyectos", "sobre mí", "experiencia", "contacto"]
         },
         "myPortfolio": {
             "title": "Mi Portfolio",

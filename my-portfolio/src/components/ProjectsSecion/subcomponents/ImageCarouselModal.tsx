@@ -41,9 +41,10 @@ const ImageCarouselModal = ({ project }: ModalProjectProps) => {
           options={project.images.map(({ label }) => ({ label, value: label }))}
           value={selectedVersion}
           onChange={setSelectedVersion}
-          containerClass="flex items-center justify-center w-full smx:w-32 md:w-40"
-          selectClass="rounded bg-coalBlue px-2 py-1 text-sm border-b-[1px] border-aquaCyan rounded-lg"
+          containerClass="flex items-center justify-center w-full smx:w-32 md:w-40 "
+          selectClass="rounded bg-coalBlue px-3 py-1 text-sm border-b-[1px] border-aquaCyan rounded-lg"
           icon={<ChevronDownIcon className='absolute w-5 h-5 text-lightSeaGreen' />}
+
         />
       )}
 
