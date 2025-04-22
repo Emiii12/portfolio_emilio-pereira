@@ -1,25 +1,13 @@
 'use client';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { CustomSelect } from '@/ui/input/CustomSelect';
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useLanguageContext } from '@/context/LanguageContext';
 
 export const SelectLanguage = () => {
-  const { i18n } = useTranslation();
-  const [language, setLanguage] = useState('es');
-
+  const { language, setLanguage } = useLanguageContext();
   const handleLanguageChange = (value: string) => {
-    localStorage.setItem('language', value);
-    i18next.changeLanguage(value);
     setLanguage(value);
   };
-
-  useEffect(() => {
-    const savedLang = localStorage.getItem('language') || 'es';
-    i18n.changeLanguage(savedLang);
-    setLanguage(savedLang);
-  }, [i18n]);
 
   return (
     <CustomSelect
@@ -37,20 +25,11 @@ export const SelectLanguage = () => {
 
 
 export const SelectLanguageSideBar = () => {
-  const { i18n } = useTranslation();
-  const [language, setLanguage] = useState('es');
+  const { language, setLanguage } = useLanguageContext();
 
   const handleLanguageChange = (value: string) => {
-    localStorage.setItem('language', value);
-    i18next.changeLanguage(value);
     setLanguage(value);
   };
-
-  useEffect(() => {
-    const savedLang = localStorage.getItem('language') || 'es';
-    i18n.changeLanguage(savedLang);
-    setLanguage(savedLang);
-  }, [i18n]);
 
   return (
     <CustomSelect

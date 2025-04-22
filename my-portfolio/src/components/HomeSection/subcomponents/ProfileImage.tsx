@@ -6,7 +6,7 @@ const ProfileImage = () => {
   return (
     <div className='p-1 rounded-full border-[2px] border-vibrantOrange '>
       <div className='w-60 h-60 smx:w-64 smx:h-64 md:w-[350px] md:h-[350px] '>
-        <Image src={ImgFoto} alt='Foto de Emilio Pereira' className='rounded-full w-full h-full object-cover'/>
+        <Image src={ImgFoto} alt='Emilio Pereira' className='rounded-full w-full h-full object-cover'/>
       </div>
     </div>
   );

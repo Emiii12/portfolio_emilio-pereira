@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 
 interface OptionCustomSelect {
   value: string;
@@ -27,38 +27,31 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   labelClass = '',
   label,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const handleChange = (newValue: string) => {
-    onChange(newValue); 
-    setIsOpen(false); 
+    onChange(newValue);
   };
 
   return (
     <div className={`relative ${containerClass}`}>
       {label && <label className={`block mb-2 ${labelClass}`}>{label}</label>}
-      <select
-        value={value}
-        onChange={(e) => handleChange(e.target.value)}
-        onFocus={() => setIsOpen(true)}
-        onBlur={() => setIsOpen(false)}
-        className={`bg-coalBlue text-white w-full appearance-none outline-none cursor-pointer ${selectClass}`}
-      >
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-      {icon && (
-        <div
-          className={`w-5 h-5 text-lightSeaGreen absolute right-2 top-1/2 transform -translate-y-1/2 transition-transform duration-150 ${
-            isOpen ? 'rotate-180' : ''
-          }`}
+      <div className="relative">
+        <select
+          value={value}
+          onChange={(e) => handleChange(e.target.value)}
+          className={`bg-coalBlue text-white w-full appearance-none outline-none cursor-pointer ${selectClass}`}
         >
-          {icon}
-        </div>
-      )}
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        {icon && (
+          <div className="w-5 h-5 text-lightSeaGreen absolute right-2 top-1/2 transform -translate-y-1/2">
+            {icon}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
