@@ -15,6 +15,8 @@ import viteIcon from '../../../../public/icon/front/viteIcon.svg';
 import tailwindCssIcon from '../../../../public/icon/front/tailwindCssIcon.svg';
 import tanstackQueryIcon from '../../../../public/icon/front/tanstackQueryIcon.png';
 import styledComponentIcon from '../../../../public/icon/front/styledComponentIcon.png';
+import bootstrapIcon from '@/../public/icon/front/bootstrapIcon.svg';
+
 
 import gitIcon from '../../../../public/icon/tools/gitIcon.svg';
 import gitHubIcon from '../../../../public/icon/tools/gitHubIcon.svg';
