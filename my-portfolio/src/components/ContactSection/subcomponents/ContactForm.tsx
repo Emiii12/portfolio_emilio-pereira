@@ -5,7 +5,7 @@ import CustomInput from '@/ui/input/CustomInput';
 import { FiUser, FiMail } from 'react-icons/fi';
 import { ButtonVariant } from '@/ui/button/ButtonVariant';
 import CustomTextarea from '@/ui/input/CustomTextArea';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import { Modal } from '@/ui/modal/Modal';
 
@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = async (data: FormValues) => {
     try {
-      const result: EmailJSResponseStatus = await emailjs.send(
+      await emailjs.send(
         'service_5mzvmss',
         'template_t1pm84k',
         data,
@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
       }
       setIsModalOpen(true);
     }
-  };
+  };  
 
   useEffect(() => {
     if (!isModalOpen) return;

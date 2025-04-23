@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playwrite+DE+LA:wght@100..400&display=swap');
-
 @import 'tailwindcss';
 @plugin 'tailwind-scrollbar';
 
@@ -17,6 +15,50 @@
 
   --breakpoint-xs: 320px;
   --breakpoint-smx: 440px;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playwrite DE LA';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/playwrite/PlaywriteDELA-Regular.woff2') format('woff2');
 }
 
 :root {
