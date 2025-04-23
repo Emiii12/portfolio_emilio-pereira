@@ -62,7 +62,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #171717;
   --foreground: #171717;
 	--font-fira-code: 'Fira Code', monospace;
 };
@@ -70,15 +70,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-  }
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #14171b;
-    --foreground: #ffffff;
-		--font-fira-code: 'Fira Code', monospace;
   }
 }
 
