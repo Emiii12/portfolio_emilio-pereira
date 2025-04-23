@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playwrite+DE+LA:wght@100..400&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin 'tailwind-scrollbar';
 
 @theme {
-  --font-fira-code: "Fira Code", monospace;
-  --font-playwrite: "Playwrite DE LA", sans-serif;
+  --font-fira-code: 'Fira Code', monospace;
+  --font-playwrite: 'Playwrite DE LA', sans-serif;
   
   --color-charcoalBlue: #14171b;
   --color-coalBlue: #21252b;
@@ -22,7 +22,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-	--font-fira-code: "Fira Code", monospace;
+	--font-fira-code: 'Fira Code', monospace;
 };
 
 @layer base {
@@ -36,7 +36,7 @@
   :root {
     --background: #14171b;
     --foreground: #ffffff;
-		--font-fira-code: "Fira Code", monospace;
+		--font-fira-code: 'Fira Code', monospace;
   }
 }
 

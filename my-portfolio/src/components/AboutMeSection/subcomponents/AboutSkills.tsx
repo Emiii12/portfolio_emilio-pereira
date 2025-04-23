@@ -14,8 +14,6 @@ import nextJsIcon from '../../../../public/icon/front/nextJsIcon.svg';
 import viteIcon from '../../../../public/icon/front/viteIcon.svg';
 import tailwindCssIcon from '../../../../public/icon/front/tailwindCssIcon.svg';
 import tanstackQueryIcon from '../../../../public/icon/front/tanstackQueryIcon.png';
-import styledComponentIcon from '../../../../public/icon/front/styledComponentIcon.png';
-import bootstrapIcon from '@/../public/icon/front/bootstrapIcon.svg';
 
 
 import gitIcon from '../../../../public/icon/tools/gitIcon.svg';
@@ -38,9 +36,9 @@ import pythonIcon from '../../../../public/icon/extras/pythonIcon.svg';
 
 const cards = [
   {
-    icons: [htmlIcon, cssIcon, javaScriptIcon, typeScriptIcon, reactIcon, tailwindCssIcon, nextJsIcon, viteIcon, tanstackQueryIcon, styledComponentIcon],
-    alt: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'Vite', 'Tanstack Query', 'Styled Component'],
-    levels: ['advanced', 'advanced', 'advanced', 'intermediate', 'advanced', 'advanced', 'intermediate', 'intermediate', 'intermediate', 'intermediate']
+    icons: [htmlIcon, cssIcon, javaScriptIcon, typeScriptIcon, reactIcon, tailwindCssIcon, nextJsIcon, viteIcon, tanstackQueryIcon],
+    alt: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'Vite', 'Tanstack Query'],
+    levels: ['advanced', 'advanced', 'advanced', 'intermediate', 'advanced', 'advanced', 'intermediate', 'intermediate', 'intermediate']
   },
   {
     icons: [gitIcon, gitHubIcon, npmIcon, vsCodeIcon, jiraIcon, bitbucketIcon],
