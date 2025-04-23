@@ -4,12 +4,12 @@ import { useExperience } from '@/services/experienceService';
 import { ReadMore } from '@/ui/button/ReadMore';
 import { motion, AnimatePresence } from 'motion/react';
 import type { Experience } from '@/util/type';
-import { useTranslation, UseTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 
 const Experience = () => {
   const experience = useExperience();
   const [expandedItems, setExpandedItems] = useState<{ [key: number]: boolean }>({});
-  const { t: tCommon } = useTranslation("common");
+  const { t: tCommon } = useTranslation('common');
 
   const toggleShowMore = (index: number) => {
     setExpandedItems((prev) => ({
@@ -52,7 +52,7 @@ const Experience = () => {
                 )}
               </AnimatePresence>
               <span className='flex items-center gap-2 text-[10px] sm:text-xs font-semibold'>
-                {!expandedItems[index] ? tCommon("interesed") : tCommon("notInteresed")}
+                {!expandedItems[index] ? tCommon('interesed') : tCommon('notInteresed')}
                 <ReadMore
                   expanded={!!expandedItems[index]}
                   onClick={() => toggleShowMore(index)}

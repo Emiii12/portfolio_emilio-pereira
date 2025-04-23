@@ -10,7 +10,7 @@ const LocationInfo = () => {
     <div className='space-y-3'>
       <p className='flex items-center justify-center gap-2 text-lightSeaGreen text-lg font-semibold'>
         <MapPinIcon className='size-6' />
-        <span className='text-white'>{t("city")}</span>
+        <span className='text-white'>Buenos </span>Aires
       </p>
       <Image src={BsAsMap} alt={`${t("city")} Mapa`} className='w-72' />
     </div>
