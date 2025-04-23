@@ -1,0 +1,25 @@
+[
+	{
+		"company": "Clostech",
+		"role": "Frontend Web Developer",
+		"startDate": "October 2023",
+		"endDate": "December 2024",
+		"details": "Clostech is an Argentinian startup that leverages artificial intelligence to let users preview how different garments would look on them by uploading a photo before purchasing.",
+		"responsibilities": [
+			"Contributed as part of the front-end team, developing, designing, and maintaining web applications using React, Next.js, and Tailwind CSS.",
+			"Implemented usability improvements, responsive design adjustments, and built scalable components to optimize the user experience."
+		]
+	},
+	{
+		"company": "BDT Global",
+		"role": "Intern - Salesforce Training Program",
+		"startDate": "August 2023",
+		"endDate": "December 2023",
+		"details": "Intensive training on the Salesforce platform with a focus on the insurance domain. Developed an insurance system for musical instruments using Apex and native Salesforce tools, including business logic, backend, and frontend components in a team environment.",
+		"responsibilities": [
+			"Collaborated on defining the data flow architecture and integrating different modules within the Salesforce ecosystem.",
+			"Designed and implemented features for an insurance solution, applying theoretical concepts to a real-world team project."
+		]
+	}
+]
+  

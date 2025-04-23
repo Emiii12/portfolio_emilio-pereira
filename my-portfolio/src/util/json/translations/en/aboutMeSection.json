@@ -1,0 +1,13 @@
+{
+    "titleSection": "About Me",
+    "textSection": "Front-end developer specialized in React with nearly 3 years of experience. I focus on building intuitive and fully responsive user interfaces, where functionality and visual design coexist to deliver the best possible user experience.",
+    "textExtra": "I consistently go beyond what's expected, suggesting ideas and enhancements that raise the overall quality of the product. I'm passionate about exploring new technologies and web development trends to discover more efficient solutions and continuously improve.\n\nIn the long term, I aspire to build a product of my own that genuinely helps people, delivering value and making their daily lives easier by standing out through product quality.",
+    "stackTitle": "tech stack",
+    "cardsTitle": ["Front-End", "Tools", "Learning", "Extra"],
+    "tootltipLabel": "Level",
+    "levels": {
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+    }
+}

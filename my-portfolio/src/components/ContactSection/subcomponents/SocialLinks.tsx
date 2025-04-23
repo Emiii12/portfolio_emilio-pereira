@@ -1,11 +1,13 @@
 import { FaLinkedinIn } from 'react-icons/fa';
 import { TbBrandGithubFilled } from "react-icons/tb";
 import IconGroup from '@/ui/common/IconGroup';
+import { useTranslation } from 'react-i18next';
 
 const SocialLinks = () => {
+  const { t } = useTranslation("contactSection");
   return (
     <div>
-      <p className='text-lg font-semibold mb-6'>Redes Sociales</p>
+      <p className='text-lg font-semibold mb-6'>{t("socialsText")}</p>
       <IconGroup
         links={[
           { href: "https://www.linkedin.com/in/emilio-pereira-a1071126a", icon: <FaLinkedinIn /> },

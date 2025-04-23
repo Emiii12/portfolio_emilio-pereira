@@ -1,13 +1,15 @@
 'use client'
 import React, { useState } from 'react';
-import { getExperience } from '@/services/experienceService';
+import { useExperience } from '@/services/experienceService';
 import { ReadMore } from '@/ui/button/ReadMore';
 import { motion, AnimatePresence } from 'motion/react';
 import type { Experience } from '@/util/type';
+import { useTranslation, UseTranslation } from 'next-i18next';
 
 const Experience = () => {
-  const experience: Experience[] = getExperience();
+  const experience = useExperience();
   const [expandedItems, setExpandedItems] = useState<{ [key: number]: boolean }>({});
+  const { t: tCommon } = useTranslation("common");
 
   const toggleShowMore = (index: number) => {
     setExpandedItems((prev) => ({
@@ -29,7 +31,7 @@ const Experience = () => {
               <h2 className='text-vibrantOrange text-base'>{item.role}</h2>
               <h3 className='text-lightSeaGreen text-sm mt-2'>{item.company}</h3>
               <h4 className='text-whiteOff text-xs'>
-                {item.fechaInicio} <span className='text-aquaCyan'>-</span> {item.fechaFin}
+                {item.startDate} <span className='text-aquaCyan'>-</span> {item.endDate}
               </h4>
             </div>
             <div className='w-full lg:h-full border-t-[1px] border-aquaCyan/60 lg:border-l-[1px] lg:border-t-0 p-5'>
@@ -50,9 +52,9 @@ const Experience = () => {
                 )}
               </AnimatePresence>
               <span className='flex items-center gap-2 text-[10px] sm:text-xs font-semibold'>
-                {!expandedItems[index] ? 'Si te interesa:' : '¿Ya no te interesa?'}
+                {!expandedItems[index] ? tCommon("interesed") : tCommon("notInteresed")}
                 <ReadMore
-                  text={expandedItems[index] ? 'Leer menos...' : 'Leer más...'}
+                  expanded={!!expandedItems[index]}
                   onClick={() => toggleShowMore(index)}
                 />
               </span>

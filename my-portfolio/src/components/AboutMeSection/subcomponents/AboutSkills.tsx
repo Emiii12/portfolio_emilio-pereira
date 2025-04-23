@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
+// Importación de íconos
 import htmlIcon from '../../../../public/icon/front/htmlIcon.svg';
 import cssIcon from '../../../../public/icon/front/cssIcon.svg';
 import javaScriptIcon from '../../../../public/icon/front/javaScriptIcon.svg';
@@ -36,28 +38,24 @@ import pythonIcon from '../../../../public/icon/extras/pythonIcon.svg';
 
 const cards = [
   {
-    title: 'Front-End',
-    icons: [htmlIcon, cssIcon, javaScriptIcon, typeScriptIcon, reactIcon, tailwindCssIcon, nextJsIcon, viteIcon, tanstackQueryIcon, styledComponentIcon, bootstrapIcon],
-    alt: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'Vite', 'Tanstack Query', 'Styled Component', 'Bootstrap'],
-    levels: ['Avanzado', 'Avanzado', 'Avanzado', 'Intermedio', 'Avanzado', 'Avanzado', 'Intermedio', 'Intermedio', 'Intermedio', 'Intermedio', 'Intermedio']
+    icons: [htmlIcon, cssIcon, javaScriptIcon, typeScriptIcon, reactIcon, tailwindCssIcon, nextJsIcon, viteIcon, tanstackQueryIcon, styledComponentIcon],
+    alt: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'Vite', 'Tanstack Query', 'Styled Component'],
+    levels: ['advanced', 'advanced', 'advanced', 'intermediate', 'advanced', 'advanced', 'intermediate', 'intermediate', 'intermediate', 'intermediate']
   },
   {
-    title: 'Herramientas',
     icons: [gitIcon, gitHubIcon, npmIcon, vsCodeIcon, jiraIcon, bitbucketIcon],
     alt: ['Git', 'GitHub', 'NPM', 'VS Code', 'Jira', 'Bitbucket'],
-    levels: ['Intermedio', 'Intermedio', 'Avanzado', 'Avanzado', 'Intermedio', 'Intermedio']
+    levels: ['intermediate', 'intermediate', 'advanced', 'advanced', 'intermediate', 'intermediate']
   },
   {
-    title: 'Aprendiendo',
     icons: [astroIcon, expressIcon, nodeJsIcon, mongoDbIcon],
     alt: ['Astro', 'Express', 'Node.js', 'MongoDB'],
-    levels: ['Básico', 'Básico', 'Básico', 'Básico']
+    levels: ['basic', 'basic', 'basic', 'basic']
   },
   {
-    title: 'Extras',
     icons: [cSharpIcon, javaIcon, mySqlIcon, phpIcon, pythonIcon],
     alt: ['C#', 'Java', 'MySQL', 'PHP', 'Python'],
-    levels: ['Básico', 'Básico', 'Intermedio', 'Básico', 'Intermedio']
+    levels: ['basic', 'basic', 'intermediate', 'basic', 'intermediate']
   },
 ];
 
@@ -67,6 +65,7 @@ const cardGroups = [
 ];
 
 const AboutSkills = () => {
+  const { t } = useTranslation("aboutMeSection");
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
@@ -78,10 +77,12 @@ const AboutSkills = () => {
             const card = cards[cardIndex];
             return (
               <div
-                key={cardIndex} 
+                key={cardIndex}
                 className='flex-1 relative flex flex-col items-center bg-coalBlue text-white text-lg font-semibold rounded-3xl shadow-lg shadow-black p-5 py-6'
               >
-                <h2 className='mb-6 text-xl text-white font-semibold'>{card.title}</h2>
+                <h2 className='mb-6 text-xl text-white font-semibold'>
+                  {t(`cardsTitle.${cardIndex}`)}
+                </h2>
                 <div className='w-full grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 place-items-center'>
                   {card.icons.map((icon, idx) => {
                     const isHovered = hoveredIcon === idx && hoveredCard === cardIndex;
@@ -100,7 +101,6 @@ const AboutSkills = () => {
                           priority 
                           className='transition-transform duration-300 hover:scale-110'
                         />
-
                         <AnimatePresence>
                           {isHovered && (
                             <motion.div 
@@ -108,11 +108,13 @@ const AboutSkills = () => {
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: 10 }}
                               transition={{ duration: 0.1 }}
-                              className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 w-36 smx:w-44 bg-charcoalBlue text-white text-center p-2 smx:p-2 rounded-lg shadow-2xl shadow-black z-50 cursor-default 
+                              className="absolute bottom-[70px] left-1/2 transform -translate-x-1/2 bg-charcoalBlue border-[1px] border-white/30 text-white text-center px-4 py-2 rounded-lg shadow-2xl shadow-black z-50
                               before:content-[''] before:absolute before:top-full before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-charcoalBlue"
                             >
-                              <p className='font-bold text-lightSeaGreen text-base'>{card.alt[idx]}</p>
-                              <p className='text-gray-300 text-sm mt-1'>Nivel: {card.levels[idx]}</p>
+                              <p className='font-bold text-lightSeaGreen text-base whitespace-nowrap'>{card.alt[idx]}</p>
+                              <p className='text-gray-300 text-sm mt-1 whitespace-nowrap'>
+                                {t("tootltipLabel")}: {t(`levels.${card.levels[idx]}`)}
+                              </p>
                             </motion.div>
                           )}
                         </AnimatePresence>

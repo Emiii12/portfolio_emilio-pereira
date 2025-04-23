@@ -1,18 +1,23 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 export const ReadMore = ({
-	text,
+	expanded,
 	onClick,
 	className = '',
 }: {
-	text: string;
+	expanded: boolean;
 	onClick: () => void;
 	className?: string;
-}) => (
-	<button
-		onClick={onClick}
-		className={`text-aquaCyan hover:text-lightSeaGreen transition-colors duration-150 cursor-pointer ${className}`}
-	>
-		{text}
-	</button>
-);
+}) => {
+	const { t } = useTranslation("common");
+	
+	return (
+		<button
+			onClick={onClick}
+			className={`text-aquaCyan hover:text-lightSeaGreen transition-colors duration-150 cursor-pointer ${className}`}
+		>
+			{expanded ? t('readLess') : t('readMore')}
+		</button>
+	);
+};
