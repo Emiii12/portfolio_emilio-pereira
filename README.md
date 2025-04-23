@@ -25,6 +25,14 @@ Este es mi portafolio web creado con Next.js, React y Tailwind CSS.
 - ESLint — Herramienta que analiza tu código para asegurar buenas prácticas y evitar errores.
 - Prettier — Formateador de código que mantiene un estilo uniforme en todo el proyecto.
 - TypeScript — Superset de JavaScript que agrega tipado estático para mejorar la calidad y mantenibilidad del código.
+- next-i18next — Librería para internacionalización (i18n), utilizada para soportar múltiples idiomas como español e inglés.
+
+🔤 Tipografía
+
+Este proyecto utiliza fuentes locales auto-hospedadas:
+
+- **Fira Code** — Fuente monoespaciada moderna ideal para código.
+- **Playwrit Deutschland Lateinische Ausgangsschrift** — Fuente estilizada para títulos y texto decorativo.
 
 📦 Instalación y Configuración
 
