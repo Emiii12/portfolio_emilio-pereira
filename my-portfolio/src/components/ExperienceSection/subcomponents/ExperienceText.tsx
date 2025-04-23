@@ -1,12 +1,15 @@
+"use client"
 import ContainerText from '@/ui/common/ContainerText';
-import React from 'react'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ExperienceText = () => {
-  return (
+	const { t } = useTranslation("experienceSection");
+  
+	return (
 		<ContainerText >
 			<p className='text-whiteOff text-sm lg:text-base'>
-				Durante mi recorrido profesional he acumulado experiencia en diversos proyectos dentro del ecosistema de startups, lo que me ha permitido 
-				desarrollar habilidades versátiles y adaptarme rápidamente a entornos dinámicos y metodologías ágiles en el desarrollo front-end.
+				{t("textSection")}
 			</p>
 		</ContainerText>
   );

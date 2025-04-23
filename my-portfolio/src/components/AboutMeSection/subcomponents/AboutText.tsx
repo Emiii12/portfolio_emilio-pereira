@@ -8,14 +8,15 @@ import { useTranslation } from 'react-i18next';
 
 const AboutText = () => {
 	const { showMore, toggleShowMore } = useAppContext();
-	const { t } = useTranslation("aboutMe");
+	const { t: tAbout } = useTranslation("aboutMeSection");
+	const { t: tCommon } = useTranslation("common");
 
 	return (
 		<>
 			<ContainerText >
 				<div className='space-y-5 text-whiteOff text-sm lg:text-base'>
 					<p>
-						{t("textSection")}
+						{tAbout("textSection")}
 					</p>
 					<AnimatePresence>
 						{showMore && (
@@ -27,14 +28,14 @@ const AboutText = () => {
 								className='overflow-hidden flex flex-col gap-5'
 							>
 								<p className='whitespace-pre-line'>
-									{t("textExtra")}
+									{tAbout("textExtra")}
 								</p>
 							</motion.div>
 						)}
 					</AnimatePresence>
 				</div>
 				<span className='text-start text-xs sm:text-sm text-white'>
-					{showMore ? t("notInteresed") : t("interesed")}:{' '}{' '}
+					{showMore ? tCommon("notInteresed") : tCommon("interesed")}{' '}
 					<ReadMore expanded={showMore} onClick={toggleShowMore} className='font-semibold'/>
 				</span>
 			</ContainerText>

@@ -2,8 +2,8 @@
 	{
 		"company": "Clostech",
 		"role": "Desarrollador Web Frontend",
-		"fechaInicio": "octubre 2023",
-		"fechaFin": "diciembre 2024",
+		"startDate": "Octubre 2023",
+		"endDate": "Diciembre 2024",
 		"details": "Clostech es una startup argentina que usa inteligencia artificial para que los usuarios puedan ver cómo lucirían diferentes prendas al subir su foto antes de comprar.",
 		"responsibilities": [
 			"Fui parte del equipo front-end, desarrollando, diseñando y manteniendo sitios web con React, Next.js y Tailwind CSS.",
@@ -13,8 +13,8 @@
 	{
 		"company": "BDT Global",
 		"role": "Pasante - Capacitación Salesforce",
-		"fechaInicio": "agosto 2023",
-		"fechaFin": "diciembre 2023",
+		"startDate": "Agosto 2023",
+		"endDate": "Diciembre 2023",
 		"details": "Capacitación intensiva sobre la plataforma Salesforce, con enfoque en seguros. Desarrollo de un sistema de seguros para instrumentos musicales usando Apex y herramientas propias de Salesforce, incluyendo lógica de negocio, back y front en equipo.",
 		"responsibilities": [
 			"Colaboré en la definición y estructura del flujo de datos y en la integración de diferentes módulos dentro del entorno Salesforce.",

@@ -63,7 +63,7 @@ const cardGroups = [
 ];
 
 const AboutSkills = () => {
-  const { t } = useTranslation("aboutMe");
+  const { t } = useTranslation("aboutMeSection");
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 

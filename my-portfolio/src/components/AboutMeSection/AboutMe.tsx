@@ -6,10 +6,10 @@ import { TitleSection } from '@/ui/common/CommonTexts';
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
-  const { t } = useTranslation("aboutMe");
+  const { t } = useTranslation("aboutMeSection");
 
   return (
-    <section className='flex flex-col gap-10 max-w-[820px] lg:max-w-full mx-auto' id='aboutMeSection'>
+    <section className='w-full flex flex-col gap-10 max-w-[820px] lg:max-w-full mx-auto' id='aboutMeSection'>
       <TitleSection text={t("titleSection")} />
       <AboutText />
       <div className='w-full flex flex-col gap-6 justify-center items-center'>

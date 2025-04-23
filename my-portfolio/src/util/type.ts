@@ -16,8 +16,8 @@ export interface Project {
 export interface Experience {
 	company: string;
 	role: string;
-	fechaInicio: string;
-	fechaFin: string;
+	startDate: string;
+	endDate: string;
 	details: string;
 	responsibilities: string[];
 };
