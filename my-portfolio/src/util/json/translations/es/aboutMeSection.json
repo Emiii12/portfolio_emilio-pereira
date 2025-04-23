@@ -1,0 +1,13 @@
+{
+    "titleSection": "Sobre Mí",
+    "textSection": "Desarrollador front-end especializado en React con casi 3 años de experiencia. Me enfoco en crear interfaces intuitivas y perfectamente adaptables, donde la funcionalidad y la estética coexisten para ofrecer la mejor experiencia al usuario.",
+    "textExtra": "Siempre voy más allá de lo esperado, proponiendo ideas y mejoras que elevan la calidad del producto. Me apasiona explorar nuevas tecnologías y tendencias en desarrollo web para encontrar soluciones más eficientes y seguir mejorando día a día.\n\nA largo plazo, sueño con crear un producto propio que realmente ayude a las personas, aportando valor y facilitando su día a día haciendo destacar la calidad del producto.",
+    "stackTitle": "stack tecnológico",
+    "cardsTitle": ["Front-End", "Herramientas", "Aprendiendo", "Extra"],
+    "tootltipLabel": "Nivel",
+    "levels": {
+        "basic": "Básico",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzado"
+    }
+}

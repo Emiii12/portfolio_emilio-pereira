@@ -1,1 +1,93 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@plugin 'tailwind-scrollbar';
+
+@theme {
+  --font-fira-code: 'Fira Code', monospace;
+  --font-playwrite: 'Playwrite DE LA', sans-serif;
+  
+  --color-charcoalBlue: #14171b;
+  --color-coalBlue: #21252b;
+  --color-silverGray: #a1a2a7;
+  --color-whiteOff: #cecece;
+  --color-lightSeaGreen: #5ce1e6;
+  --color-aquaCyan: #20b2aa;
+  --color-vibrantOrange: #ffa500;
+
+  --breakpoint-xs: 320px;
+  --breakpoint-smx: 440px;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../public/fonts/firaCode/FiraCode-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playwrite DE LA';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/playwrite/PlaywriteDELA-Regular.woff2') format('woff2');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+	--font-fira-code: 'Fira Code', monospace;
+};
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14171b;
+    --foreground: #ffffff;
+		--font-fira-code: 'Fira Code', monospace;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-fira-code);
+}
+
+code, pre {
+  font-family: var(--font-fira-code);
+}

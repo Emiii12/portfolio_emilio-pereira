@@ -1,0 +1,13 @@
+{
+    "titleSection": "Contact",
+    "socialsText": "Socials Networks",
+    "labelInputName": "Your name",
+    "labelInputMail": "Your mail",
+    "labelInputMessage": "Your message",
+    "placeholderInputName": "Ex: Emilio Pereira",
+    "placeholderInputEmail": "Ex: emilio@example.com",
+    "placeholderInputMessage": "Write your message here",
+    "messageModalSuccess": "Message sent successfully!",
+    "messageModalErrorUnknown": "Unknown error while sending.",
+    "messageModalError": "Failed to send: {{error}}"
+}

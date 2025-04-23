@@ -1,0 +1,78 @@
+[
+  {
+    "title": "SPA Clostech",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Official digital platform for Clostech, designed to showcase their visual identity and detail the capabilities of their API focused on digital fashion.",
+    "link": "https://www.clostech.tech/",
+    "role": "Frontend Web Developer",
+    "images": [
+      {
+        "label": "Version 1",
+        "keys": ["spaV1Home", "spaV1HomeResp", "spaV1About", "spaV1AboutResp", "spaV1App", "spaV1AppResp", "spaV1Mirror", "spaV1MirrorResp"]
+      },
+      {
+        "label": "Version 2",
+        "keys": ["spaV2Home", "spaV2HomeResp", "spaV2About", "spaV2AboutResp", "spaV2Mirror", "spaV2MirrorResp"]
+      }
+    ],
+    "details": "SPA Clostech was developed as the official presentation platform for the brand, showcasing its visual identity and technical details of its digital fashion API. The site became the main point of contact for potential clients interested in implementing AI solutions in the fashion sector.\n\nThe project was built using React as its main foundation, leveraging Next.js to optimize performance and SEO capabilities. The implementation of Tailwind CSS allowed for creating a visually coherent interface that was fully adaptable to different devices, maintaining the minimalist aesthetic characteristic of the brand.\n\nThe project underwent modifications over time in which I had no direct involvement due to my responsibilities on other Clostech websites.",
+    "responsibilities": [
+      "Interface design and implementation",
+      "Responsive web development",
+      "Mobile optimization",
+      "Design collaboration"
+    ],
+    "state": "public"
+  },
+  {
+    "title": "Clostech APP",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Tanstack Query", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Web application to create and visualize virtual outfits in real-time using artificial intelligence and a single photograph.",
+    "link": "",
+    "role": "Frontend Web Developer",
+    "images": [
+      {
+        "label": "Version 1",
+        "keys": ["appLogin", "appLoginResp", "appHome", "appHomeResp", "appCreate", "appCreateResp", "appAI", "appAIResp", "appNew", "appNewResp", "appProfile", "appProfileResp"]
+      }
+    ],
+    "details": "Clostech APP represented a significant innovation in the digital fashion sector, combining artificial intelligence technology with an intuitive interface that allowed users to visualize complete outfits using just a photograph. The platform implemented advanced body recognition algorithms to virtually position selected garments.\n\nTechnically, the application was developed with a modern architecture based on React and Next.js, with a focus on performance optimization for processing and manipulating images in real-time. The integration with AI APIs required the development of efficient communication protocols and a robust state management system to handle the different visual transformation processes.\n\nAlthough the application is no longer publicly available, this project laid the technological foundations for future iterations of Clostech products, establishing standards for both AI integration and interface design centered on immersive visual experiences in the digital fashion sector.",
+    "responsibilities": [
+      "Responsive web development",
+      "Implementation of garment upload system",
+      "Connection with AI model for visualization",
+      "Development of image upload, loading and placement",
+      "Mobile optimization"
+    ],
+    "state": "disabled"
+  },
+  {
+    "title": "Portal Clostech",
+    "stack": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Tanstack Query", "Git", "GitHub", "Jira", "Bitbucket"],
+    "description": "Clostech Business Portal to manage API usage and facilitate integration with WordPress, Shopify and Tiendanube in a centralized way.",
+    "link": "https://portal-empresa.clostech.tech/authentication",
+    "role": "Frontend Web Developer",
+    "images": [
+      {
+        "label": "Version 1",
+        "keys": ["portalV1UsoCosto", "portalV1UsoActividad", "portalV1Planes", "portalV1ApiKey", "portalV1ApiKeyModal", "portalV1ConfigDetalles", "portalV1CustomButton"]
+      },
+      {
+        "label": "Version 2",
+        "keys": ["portalV2Login", "portalV2Home", "portalV2Consumo", "portalV2ApiKey", "portalV2ImportarProd", "portalV2Tiendanube", "portalV2CustomModal"]
+      }
+    ],
+    "details": "The Clostech Portal was conceived as a comprehensive administrative platform that allows businesses and developers to efficiently manage their use of the Clostech API. The system centralizes all the necessary tools for implementation, monitoring and customization in a single interactive dashboard, facilitating technology adoption for clients across various sectors.\n\nThe portal's architecture was implemented with React and Next.js, prioritizing security in handling credentials and sensitive data. The system incorporated advanced integrations with e-commerce platforms such as Tiendanube, Shopify and WordPress, developing specific connectors that enabled native implementation of AI components in different online sales environments.\n\nA distinctive feature of the portal was its real-time statistics visualization system, which provided users with valuable insights about the performance of their implementations. This functionality required the development of highly optimized data visualization components and the implementation of dynamic update systems to keep information always current.",
+    "responsibilities": [
+      "Creation and development of the website from scratch",
+      "Implementation of registration and login",
+      "Dashboard design with statistics",
+      "Backend API consumption",
+      "Connection with Tiendanube for custom component implementation",
+      "Client profile and plans view",
+      "Responsive web development",
+      "Integration of Clerk for authentication"
+    ],
+    "state": "private"
+  }
+]
