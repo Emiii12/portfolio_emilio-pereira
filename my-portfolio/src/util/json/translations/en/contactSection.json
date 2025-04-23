@@ -1,0 +1,11 @@
+{
+    "titleSection": "Contact",
+    "city": "Buenos Aires",
+    "socialsText": "Socials Networks",
+    "labelInputName": "Your name",
+    "labelInputMail": "Your mail",
+    "labelInputMessage": "Your message",
+    "placeholderInputName": "Ex: Emilio Pereira",
+    "placeholderInputEmail": "Ex: emilio@example.com",
+    "placeholderInputMessage": "Write your message here"
+}

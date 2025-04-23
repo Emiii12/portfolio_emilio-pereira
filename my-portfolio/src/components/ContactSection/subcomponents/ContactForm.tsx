@@ -7,6 +7,7 @@ import { ButtonVariant } from '@/ui/button/ButtonVariant';
 import CustomTextarea from '@/ui/input/CustomTextArea';
 import emailjs from '@emailjs/browser';
 import { EmailJSResponseStatus } from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 type FormValues = {
   name: string;
@@ -15,6 +16,9 @@ type FormValues = {
 };
 
 const ContactForm: React.FC = () => {
+  const { t: tContact } = useTranslation("contactSection");
+  const { t: tCommon } = useTranslation("common");
+
   const { 
     register, 
     handleSubmit,
@@ -51,38 +55,38 @@ const ContactForm: React.FC = () => {
       <div className="flex flex-col sm:flex-row gap-5">
         <CustomInput
           id="name"
-          labelText="Tu Nombre"
+          labelText={tContact("labelInputName")}
           labelClass="text-base text-white"
           inputClass="text-sm"
-          placeholder="Ej: Emilio Pereira"
+          placeholder={tContact("placeholderInputName")}
           icon={<FiUser className="text-aquaCyan" />}
           register={register('name', { required: true })}
           error={errors.name}
-          errorMessage="El nombre es obligatorio"
+          errorMessage={tContact("labelInputName") + " es obligatorio"}
         />
         <CustomInput
           id="email"
-          labelText="Tu Email"
+          labelText={tContact("labelInputMail")}
           labelClass="text-base text-white"
-          placeholder="Ej: emilio@ejemplo.com"
+          placeholder={tContact("placeholderInputEmail")}
           inputClass="text-sm"
           type="email"
           icon={<FiMail className="text-aquaCyan" />}
           register={register('email', { required: true })}
           error={errors.email}
-          errorMessage="El email es obligatorio"
+          errorMessage={tContact("labelInputMail") + " es obligatorio"}
         />
       </div>
 
       <CustomTextarea 
         id="message"
-        labelText="Tu mensaje"
+        labelText={tContact("labelInputMessage")}
         labelClass="text-base text-white"
-        placeholder="Escribe tu mensaje acá"
+        placeholder={tContact("placeholderInputMessage")}
         textareaClass="text-sm min-h-[120px] max-h-[250px]"
         register={register('message', { required: true })}
         error={errors.message}
-        errorMessage="El mensaje es obligatorio"
+        errorMessage={tContact("labelInputMessage") + " es obligatorio"}
       />
 
       <div className="sm:flex sm:justify-center">
@@ -92,7 +96,7 @@ const ContactForm: React.FC = () => {
           disabled={!isValid || isSubmitting}
           className="py-2 w-full sm:w-1/2"
         >
-          {isSubmitting ? 'Enviando...' : 'Enviar'}
+          {isSubmitting ? tCommon("loadingButtonVariantContact") : tCommon("buttonVariantContactSecondarySend")}
         </ButtonVariant>
       </div>
     </form>

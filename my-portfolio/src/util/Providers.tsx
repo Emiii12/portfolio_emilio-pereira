@@ -11,7 +11,8 @@ import homeSection_es from '@/util/json/translations/es/homeSection.json';
 import projectsSection_es from '@/util/json/translations/es/projectsSection.json';
 import projects_es from '@/util/json/translations/es/projects.json';
 import aboutMeSection_es from '@/util/json/translations/es/aboutMeSection.json';
-import experienceSection_es from '@/util/json/translations/es/experienceSection.json'
+import experienceSection_es from '@/util/json/translations/es/experienceSection.json';
+import contactSection_es from '@/util/json/translations/es/contactSection.json';
 
 import layout_en from '@/util/json/translations/en/layout.json';
 import common_en from '@/util/json/translations/en/common.json';
@@ -19,7 +20,8 @@ import homeSection_en from '@/util/json/translations/en/homeSection.json';
 import projectsSection_en from '@/util/json/translations/en/projectsSection.json';
 import projects_en from '@/util/json/translations/en/projects.json';
 import aboutMeSection_en from '@/util/json/translations/en/aboutMeSection.json';
-import experienceSection_en from '@/util/json/translations/en/experienceSection.json'
+import experienceSection_en from '@/util/json/translations/en/experienceSection.json';
+import contactSection_en from '@/util/json/translations/en/contactSection.json';
 
 const getUserLanguage = () => {
   if (typeof window !== 'undefined') {
@@ -39,7 +41,8 @@ i18next.init({
       projectsSection: projectsSection_es,
       projects: projects_es,
       aboutMeSection: aboutMeSection_es,
-      experienceSection: experienceSection_es
+      experienceSection: experienceSection_es,
+      contactSection: contactSection_es
     },
     en: { 
       layout: layout_en,
@@ -48,7 +51,8 @@ i18next.init({
       projectsSection: projectsSection_en,
       projects: projects_en,
       aboutMeSection: aboutMeSection_en,
-      experienceSection: experienceSection_en
+      experienceSection: experienceSection_en,
+      contactSection: contactSection_en
     },
   },
 });

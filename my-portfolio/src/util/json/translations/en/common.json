@@ -1,6 +1,7 @@
 {
     "openToWork": "open to work",
-    "buttonVariantContactSecondarySend": "Sent",
+    "buttonVariantContactSecondarySend": "Send",
+    "loadingButtonVariantContact": "Sending",
     "buttonCardProjectsDetails": "Details",
     "buttonCardProjectsSeeWeb": "See Web",
     "readMore": "Read more",
