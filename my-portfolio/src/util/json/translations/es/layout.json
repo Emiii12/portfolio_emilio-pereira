@@ -5,6 +5,7 @@
     "footer": {
         "major": "Mis webs son como yo: siempre buscando la mejor versión.",
         "navigation": {
+            "title": "Navegación",
             "items": ["inicio", "proyectos", "sobre mí", "experiencia", "contacto"]
         },
         "myPortfolio": {

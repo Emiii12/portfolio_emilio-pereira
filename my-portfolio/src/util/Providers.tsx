@@ -11,12 +11,14 @@ import common_es from '@/util/json/translations/es/common.json';
 import homeSection_es from '@/util/json/translations/es/homeSection.json';
 import projectsSection_es from '@/util/json/translations/es/projectsSection.json';
 import projects_es from '@/util/json/translations/es/projects.json';
+import aboutMe_es from '@/util/json/translations/es/aboutMe.json';
 
 import layout_en from '@/util/json/translations/en/layout.json';
 import common_en from '@/util/json/translations/en/common.json';
 import homeSection_en from '@/util/json/translations/en/homeSection.json';
 import projectsSection_en from '@/util/json/translations/en/projectsSection.json';
 import projects_en from '@/util/json/translations/en/projects.json';
+import aboutMe_en from '@/util/json/translations/en/aboutMe.json';
 
 const getUserLanguage = () => {
   if (typeof window !== 'undefined') {
@@ -34,14 +36,16 @@ i18next.init({
       common: common_es,
       homeSection: homeSection_es,
       projectsSection: projectsSection_es,
-      projects: projects_es
+      projects: projects_es,
+      aboutMe: aboutMe_es
     },
     en: { 
       layout: layout_en,
       common: common_en,
       homeSection: homeSection_en,
       projectsSection: projectsSection_en,
-      projects: projects_en
+      projects: projects_en,
+      aboutMe: aboutMe_en
     },
   },
 });

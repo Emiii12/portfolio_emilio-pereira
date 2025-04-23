@@ -15,7 +15,9 @@ const FooterNav = () => {
 
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="text-xl font-semibold">Navegación</h3>
+      <h4 className="text-xl font-semibold">
+        {t("footer.navigation.title")}
+      </h4>
       <nav className="flex flex-col gap-3 flex-wrap justify-center items-center md:items-start">
         {navItemsFooter.map((item, index) => (
           <Link

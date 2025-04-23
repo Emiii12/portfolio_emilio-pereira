@@ -5,6 +5,7 @@
     "footer": {
         "major": "My websites are like me: always looking for the best version.",
         "navigation": {
+            "title": "Navigation",
             "items": ["home", "projects", "about me", "experience", "contact"]
         },
         "myPortfolio": {
