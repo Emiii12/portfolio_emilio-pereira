@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   const { t } = useTranslation("projectsSection");
   
   return (
-    <section className='w-full max-w-[820px] lg:max-w-full mx-auto flex flex-col gap-10' id='projectSection'>
+    <section className='w-full max-w-[820px] lg:max-w-full mx-auto flex flex-col gap-10' id='projectsSection'>
       <TitleSection text={t("titleSection")} />
       <ProjectText />
       <ProjectCards />
