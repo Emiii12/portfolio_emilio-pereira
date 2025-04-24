@@ -30,20 +30,20 @@ const ModalProject = ({ project }: ModalProjectProps) => {
               animate={{ opacity: 1 }}
             >
               {project.stack.map((tech, i) => (
-                <TechStack tech={tech} key={i} className='px-3 py-1 text-xs flex-shrink-0' />
+                <TechStack tech={tech} key={i} className='px-3 py-1 text-xs text-white flex-shrink-0' />
               ))}
             </motion.div>
           </div>
         </div>
 
         <div className='flex-shrink-0 max-h-[280px] overflow-y-auto border-2 border-charcoalBlue shadow-xs shadow-charcoalBlue rounded-2xl px-2 py-2 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-charcoalBlue scrollbar-thumb-aquaCyan'>
-          <h4 className='text-base font-semibold mb-4'>
+          <h4 className='text-base font-semibold mb-4 text-white'>
             {t("modalTextDescription")}:
           </h4>
           <p className='text-whiteOff text-sm whitespace-pre-line mb-4'>
             {project.details}
           </p>
-          <h4 className='text-base font-semibold mb-3'>
+          <h4 className='text-base font-semibold text-white mb-3'>
             {t("modalTextResponsabilites")}:
           </h4>
           <ul className='flex flex-col gap-2'>
