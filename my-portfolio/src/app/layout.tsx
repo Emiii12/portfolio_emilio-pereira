@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "https://emilio-pereira.vercel.app/og-image.png",
+          url: "https://emilio-pereira.vercel.app/image/og-image.png",
           width: 1200,
           height: 630,
           alt: "Vista previa del portfolio de Emilio Pereira, desarrollador front-end"
@@ -34,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: "Emilio Pereira · Portfolio",
       description: "Frontend Developer. Disponible para trabajar.",
-      images: ["https://emilio-pereira.vercel.app/og-image.png"]
+      images: ["https://emilio-pereira.vercel.app/image/og-image.png"]
     },
     metadataBase: new URL("https://emilio-pereira.vercel.app")
   };
