@@ -12,10 +12,33 @@ const firaCode = Fira_Code({
   weight: ["300", "400", "500", "600", "700"], 
 });
 
-export const metadata: Metadata = {
-  title: "Emilio Pereira - Portfolio",
-  description: "This is my portfolio!",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Emilio Pereira · Portfolio",
+    description: "Desarrollador frontend disponible para trabajar. Portfolio con tecnologías modernas.",
+    openGraph: {
+      title: "Emilio Pereira · Portfolio",
+      description: "Desarrollador frontend disponible para trabajar. Portfolio con React, Next.js y más.",
+      url: "https://emilio-pereira.vercel.app/",
+      type: "website",
+      images: [
+        {
+          url: "https://emilio-pereira.vercel.app/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Vista previa del portfolio de Emilio Pereira, desarrollador front-end"
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Emilio Pereira · Portfolio",
+      description: "Frontend Developer. Disponible para trabajar.",
+      images: ["https://emilio-pereira.vercel.app/og-image.png"]
+    },
+    metadataBase: new URL("https://emilio-pereira.vercel.app")
+  };
+}
 
 export default function RootLayout({
   children,
