@@ -1,7 +1,7 @@
 {
     "titleSection": "Sobre Mí",
-    "textSection": "Desarrollador front-end especializado en React con casi 3 años de experiencia. Me enfoco en crear interfaces intuitivas y perfectamente adaptables, donde la funcionalidad y la estética coexisten para ofrecer la mejor experiencia al usuario.",
-    "textExtra": "Siempre voy más allá de lo esperado, proponiendo ideas y mejoras que elevan la calidad del producto. Me apasiona explorar nuevas tecnologías y tendencias en desarrollo web para encontrar soluciones más eficientes y seguir mejorando día a día.\n\nA largo plazo, sueño con crear un producto propio que realmente ayude a las personas, aportando valor y facilitando su día a día haciendo destacar la calidad del producto.",
+    "textSection": "Soy un desarrollador front-end de Buenos Aires con casi 3 años de experiencia construyendo sitios web rápidos, responsivos y accesibles utilizando React, Next.js y Tailwind CSS. Me preocupo profundamente por el código limpio, la buena experiencia de usuario y el diseño significativo.",
+    "textExtra": "Lo que me distingue no es solo la tecnología que uso, sino mi forma de pensar: me encanta resolver problemas, mejorar los flujos de usuario y proponer ideas que van más allá del ticket. Prospero en entornos de ritmo acelerado y disfruto convirtiendo ideas complejas en interfaces intuitivas.\n\nEn este momento, estoy perfeccionando mis habilidades de backend con Node.js y MongoDB para crecer hacia un rol full-stack, mientras continúo creando experiencias digitales significativas.",
     "stackTitle": "stack tecnológico",
     "cardsTitle": ["Front-End", "Herramientas", "Aprendiendo", "Extra"],
     "tootltipLabel": "Nivel",

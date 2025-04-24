@@ -1,12 +1,12 @@
 'use client';
 import { useSidebarContext } from "@/context/SidebarContext";
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import { useTranslation } from "react-i18next";
 
 const navItems = [
   { id: "home", href: "#homeSection" },
-  { id: "projects", href: "#projectSection" },
-  { id: "about", href: "#aboutMeSection" },
+  { id: "projects", href: "#projectsSection" },
+  { id: "about", href: "#aboutSection" },
   { id: "experience", href: "#experienceSection" },
   { id: "contact", href: "#contactSection" }
 ];
@@ -14,6 +14,36 @@ const navItems = [
 export const NavbarItems = () => {
   const [active, setActive] = useState("home");
   const { t } = useTranslation("layout");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id.replace("Section", "");
+            setActive(sectionId);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    navItems.forEach((item) => {
+      const section = document.querySelector(item.href);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      navItems.forEach((item) => {
+        const section = document.querySelector(item.href);
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
 
   return (
     <nav>

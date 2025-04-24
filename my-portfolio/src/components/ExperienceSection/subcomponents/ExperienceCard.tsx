@@ -51,7 +51,7 @@ const Experience = () => {
                   </motion.ul>
                 )}
               </AnimatePresence>
-              <span className='flex items-center gap-2 text-[10px] sm:text-xs font-semibold'>
+              <span className='flex items-center gap-2 text-[10px] sm:text-xs text-white font-semibold'>
                 {!expandedItems[index] ? tCommon('interesed') : tCommon('notInteresed')}
                 <ReadMore
                   expanded={!!expandedItems[index]}
