@@ -39,10 +39,6 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL("https://emilio-pereira.vercel.app")
   };
 }
-export const metadata: Metadata = {
-  title: "Emilio Pereira - Portfolio",
-  description: "This is my portfolio!",
-};
 
 export default function RootLayout({
   children,
