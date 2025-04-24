@@ -1,7 +1,7 @@
 {
     "titleSection": "About Me",
-    "textSection": "Front-end developer specialized in React with nearly 3 years of experience. I focus on building intuitive and fully responsive user interfaces, where functionality and visual design coexist to deliver the best possible user experience.",
-    "textExtra": "I consistently go beyond what's expected, suggesting ideas and enhancements that raise the overall quality of the product. I'm passionate about exploring new technologies and web development trends to discover more efficient solutions and continuously improve.\n\nIn the long term, I aspire to build a product of my own that genuinely helps people, delivering value and making their daily lives easier by standing out through product quality.",
+    "textSection": "I’m a front-end developer from Buenos Aires with nearly 3 years of experience building fast, responsive, and accessible websites using React, Next.js, and Tailwind CSS. I care deeply about clean code, good UX, and meaningful design.",
+    "textExtra": "What sets me apart is not just the tech I use, but the way I think: I love solving problems, improving user flows, and proposing ideas that go beyond the ticket. I thrive in fast-paced environments and enjoy turning complex ideas into intuitive interfaces.\n\nRight now, I’m sharpening my backend skills with Node.js and MongoDB to grow into a full-stack role, while continuing to create meaningful digital experiences.",
     "stackTitle": "tech stack",
     "cardsTitle": ["Front-End", "Tools", "Learning", "Extra"],
     "tootltipLabel": "Level",

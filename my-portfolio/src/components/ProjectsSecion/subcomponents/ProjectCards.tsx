@@ -59,7 +59,7 @@ const ProjectCards = () => {
               </div>
               <div className='flex gap-1 flex-wrap'>
                 {project.stack.slice(0, 3).map((tech, i) => (
-                  <TechStack tech={tech} key={i} className='px-2 py-1 text-xs'/>
+                  <TechStack tech={tech} key={i} className='px-2 py-1 text-xs text-white'/>
                 ))}
               </div>
               <div className='text-whiteOff text-sm'>
