@@ -37,11 +37,6 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "Front-end Developer",
       images: ["https://emilio-pereira.vercel.app/image/og-image.png"]
     },
-    other: {
-      'linkedin:image': "https://emilio-pereira.vercel.app/image/og-image.png",
-      'linkedin:title': "Emilio Pereira · Portfolio",
-      'linkedin:description': "Desarrollador frontend. Portfolio con React, Next.js y más."
-    },
     metadataBase: new URL("https://emilio-pereira.vercel.app")
   };
 }
