@@ -5,7 +5,6 @@ interface CustomTextareaProps {
   id: string;
   labelText?: string;
   labelClass?: string;
-  textareaClass?: string;
   placeholder?: string;
   rows?: number;
   register?: UseFormRegisterReturn;
@@ -17,7 +16,6 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
   id,
   labelText,
   labelClass = '',
-  textareaClass = '',
   placeholder = '',
   rows = 4,
   register,
@@ -36,7 +34,7 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
           id={id}
           placeholder={placeholder}
           rows={rows}
-          className={`p-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none w-full text-white`}
+          className={`w-full text-sm min-h-[120px] max-h-[250px] text-whitep-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none`}
           {...(register || {})}
         ></textarea>
       </div>

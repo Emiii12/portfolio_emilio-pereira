@@ -97,7 +97,6 @@ const ContactForm: React.FC = () => {
           labelText={tContact('labelInputMessage')}
           labelClass='text-base text-white'
           placeholder={tContact('placeholderInputMessage')}
-          textareaClass='text-sm min-h-[120px] max-h-[250px] text-white'
           register={register('message', { required: true })}
           error={errors.message}
           errorMessage={tContact('labelInputMessageRequired')}
