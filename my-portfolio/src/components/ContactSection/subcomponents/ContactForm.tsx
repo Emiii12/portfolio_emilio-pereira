@@ -71,24 +71,24 @@ const ContactForm: React.FC = () => {
             id='name'
             labelText={tContact('labelInputName')}
             labelClass='text-base text-white'
-            inputClass='text-sm'
+            inputClass='text-sm text-white'
             placeholder={tContact('placeholderInputName')}
-            icon={<FiUser className='text-aquaCyan' />}
+            icon={<FiUser />}
             register={register('name', { required: true })}
             error={errors.name}
-            errorMessage={tContact('labelInputName') + ' es obligatorio'}
+            errorMessage={tContact('labelInputNameRequired')}
           />
           <CustomInput
             id='email'
             labelText={tContact('labelInputMail')}
             labelClass='text-base text-white'
             placeholder={tContact('placeholderInputEmail')}
-            inputClass='text-sm'
+            inputClass='text-sm text-white'
             type='email'
-            icon={<FiMail className='text-aquaCyan' />}
+            icon={<FiMail />}
             register={register('email', { required: true })}
             error={errors.email}
-            errorMessage={tContact('labelInputMail') + ' es obligatorio'}
+            errorMessage={tContact('labelInputMailRequired')}
           />
         </div>
 
@@ -97,10 +97,10 @@ const ContactForm: React.FC = () => {
           labelText={tContact('labelInputMessage')}
           labelClass='text-base text-white'
           placeholder={tContact('placeholderInputMessage')}
-          textareaClass='text-sm min-h-[120px] max-h-[250px]'
+          textareaClass='text-sm min-h-[120px] max-h-[250px] text-white'
           register={register('message', { required: true })}
           error={errors.message}
-          errorMessage={tContact('labelInputMessage') + ' es obligatorio'}
+          errorMessage={tContact('labelInputMessageRequired')}
         />
 
         <div className='sm:flex sm:justify-center'>

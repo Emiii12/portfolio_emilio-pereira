@@ -33,6 +33,7 @@ import javaIcon from '../../../../public/icon/extras/javaIcon.svg';
 import mySqlIcon from '../../../../public/icon/extras/mySqlIcon.svg';
 import phpIcon from '../../../../public/icon/extras/phpIcon.svg';
 import pythonIcon from '../../../../public/icon/extras/pythonIcon.svg';
+import salesforceIcon from '../../../../public/icon/extras/salesforceIcon.svg';
 
 const cards = [
   {
@@ -51,9 +52,9 @@ const cards = [
     levels: ['basic', 'basic', 'basic', 'basic']
   },
   {
-    icons: [cSharpIcon, javaIcon, mySqlIcon, phpIcon, pythonIcon],
-    alt: ['C#', 'Java', 'MySQL', 'PHP', 'Python'],
-    levels: ['basic', 'basic', 'intermediate', 'basic', 'intermediate']
+    icons: [cSharpIcon, javaIcon, mySqlIcon, phpIcon, pythonIcon, salesforceIcon],
+    alt: ['C#', 'Java', 'MySQL', 'PHP', 'Python', 'Salesforce Admin'],
+    levels: ['basic', 'basic', 'intermediate', 'basic', 'intermediate', 'intermediate']
   },
 ];
 

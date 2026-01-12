@@ -44,7 +44,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
           {...(register || {})}
         />
         {icon && (
-          <span className={`absolute inset-y-0 right-3 flex items-center text-white ${iconClass}`}>
+          <span className={`absolute inset-y-0 right-3 flex items-center ${iconClass} ${error ? 'text-red-500' : 'text-aquaCyan'}`}>
             {icon}
           </span>
         )}

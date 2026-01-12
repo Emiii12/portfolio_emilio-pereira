@@ -8,8 +8,6 @@ interface CustomTextareaProps {
   textareaClass?: string;
   placeholder?: string;
   rows?: number;
-  icon?: React.ReactNode;
-  iconClass?: string;
   register?: UseFormRegisterReturn;
   error?: FieldError | undefined;
   errorMessage?: string;
@@ -22,8 +20,6 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
   textareaClass = '',
   placeholder = '',
   rows = 4,
-  icon,
-  iconClass = '',
   register,
   error,
   errorMessage = 'Este campo es obligatorio'
@@ -40,14 +36,9 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
           id={id}
           placeholder={placeholder}
           rows={rows}
-          className={`p-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none w-full ${icon ? 'pr-10' : ''} ${textareaClass}`}
+          className={`p-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none w-full text-white`}
           {...(register || {})}
         ></textarea>
-        {icon && (
-          <span className={`absolute top-3 right-3 flex items-start text-white ${iconClass}`}>
-            {icon}
-          </span>
-        )}
       </div>
       {error && (
         <p className="mt-1 text-red-500 text-sm">{errorMessage}</p>
