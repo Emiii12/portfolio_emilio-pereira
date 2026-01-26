@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 
 const navItemsFooter = [
   { id: "home", href: "#homeSection" },
-  { id: "projects", href: "#projectsSection" },
   { id: "about", href: "#aboutSection" },
+  { id: "projects", href: "#projectsSection" },
   { id: "experience", href: "#experienceSection" },
   { id: "contact", href: "#contactSection" }
 ];

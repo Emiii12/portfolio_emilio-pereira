@@ -89,7 +89,7 @@ const ImageCarouselModal = ({ project }: ModalProjectProps) => {
 
         <div className="custom-swiper-button-next group absolute top-0 right-0 h-full w-14 cursor-pointer z-10 flex items-center justify-center">
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-l from-black/60 to-transparent transition-opacity duration-200"></div>
-          <div className="bg-charcoalBlue/50 rounded-full p-2 z-10 group-hover:scale-110">
+          <div className="bg-charcoalBlue/50 rounded-full p-2 z-10 group-hover:scale-110 border-[1px] border-black">
             <ChevronRightIcon className="h-6 w-6 text-vibrantOrange" />
           </div>
         </div>
