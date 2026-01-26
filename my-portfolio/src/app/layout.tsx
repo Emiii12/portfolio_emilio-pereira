@@ -6,6 +6,7 @@ import { Providers } from "@/util/Providers";
 import PageWrapper from "@/layout/PageWrapper/PageWrapper"; 
 import Footer from "@/layout/Footer/Footer";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { ButtonBackTop } from "@/ui/button/ButtonBackTop";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -55,6 +56,7 @@ export default function RootLayout({
             {children}
           </PageWrapper>
           <Footer />
+          <ButtonBackTop />
           <SpeedInsights />
         </Providers>
       </body>
