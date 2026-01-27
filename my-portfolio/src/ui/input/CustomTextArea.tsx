@@ -34,7 +34,7 @@ const CustomTextarea: React.FC<CustomTextareaProps> = ({
           id={id}
           placeholder={placeholder}
           rows={rows}
-          className={`w-full text-sm min-h-[120px] max-h-[250px] text-whitep-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none`}
+          className={`w-full text-sm min-h-[120px] max-h-[250px] text-white p-3 rounded-lg bg-coalBlue border ${error ? 'border-red-500' : 'border-aquaCyan/50'} transition-all duration-100 ease-in-out focus:border-lightSeaGreen focus:ring focus:ring-lightSeaGreen outline-none appearance-none`}
           {...(register || {})}
         ></textarea>
       </div>
